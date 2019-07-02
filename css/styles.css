@@ -15,6 +15,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.content {
+  padding: 16px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -139,6 +149,10 @@ a.dotted-link:hover {
 .header .btn {
   margin-top: 60px;
   font-weight: bold;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 
 .header .profile-image {
