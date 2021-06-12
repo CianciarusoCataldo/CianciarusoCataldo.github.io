@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cataldo Cianciaruso - Portfolio Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2d3748" />
+    <meta name="description" content="Cataldo Cianciaruso - Portfolio Page" />
+    <style type="text/css">
+      .preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        background: #2d3748 url("images/preloader.svg") no-repeat center center;
+      }
+    </style>
+    <div id="preloader" class="preloader"></div>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  </head>
+  <body style="background-color: #2d3748">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <input type="hidden" value="%NODE_ENV%" id="node_env_mode" />
+    <script>
+      var mode = document.querySelector("#node_env_mode").value;
+      if (
+        mode === "production" &&
+        typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === "object"
+      ) {
+        window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function () {};
+      }
+    </script>
+  </body>
+</html>
