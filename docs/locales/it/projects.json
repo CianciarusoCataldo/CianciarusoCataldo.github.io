@@ -1,0 +1,19 @@
+{
+  "item_checkItOut": "Visita la pagina",
+  "demoUi_title": "Demo-ui",
+  "demoUi_subTitle": "Progetta i tuoi componenti React con un pratico playground dedicato !",
+  "demoUi_description": "Una piccola libreria UI progettata per gli sviluppatori React, per avere un ambiente interattivo durante la progettazione e il testing dei componenti di una qualsiasi applicazione React. Vuoi dare un'occhiata e provarla? Controlla la pagina ufficiale Githb, include un ambiente demo real-time per testarne le funzionalità, senza dover installare nulla !",
+  "demoUi_link": "https://github.com/CianciarusoCataldo/demo-ui",
+  "nnIa_title": "AI image detector",
+  "nnIa_subTitle": "Un sistema distribuito per reti Neurali",
+  "nnIa_description": "AI image detector è Un sistema distribuito per reti Neurali, che analizza qualsiasi immagina alla ricerca di oggetti e volti. Da questi ultimi, è in grado di rilevare, con buona percentuale, età stimata, sesso ed emozioni. Usa un approccio distribuito e modulare, rendendo semplice la progettazione di un sistema personalizzato a partire da esso. Visita la pagina Github ufficiale, contattami per qualunque feedback !",
+  "nnIa_link": "https://github.com/CianciarusoCataldo/nn-dispatcher",
+  "nnIaAndroid_title": "AI image detector Android client",
+  "nnIaAndroid_subTitle": "Un client Android per AI image detector",
+  "nnIaAndroid_description": "Un client Android per AI image detector. Può essere facilmente adattato per altri progetti. Puoi analizzare qualsiasi immagine, tramite il modulo backend AI image detector, tramite la fotocamera o dalla memoria interna, e visualizzare i risultati in una pratica lista. Puoi anche inviare ogni risultato, come immagine, tramite una qualsiasi app di messagistica/e-mail ! ",
+  "nnIaAndroid_link": "https://github.com/CianciarusoCataldo/nn-android-client",
+  "stegfy_title": "Stegfy",
+  "stegfy_subTitle": "Cripta i tuoi messaggi dentro qualsiasi immagine e inviali dovunque tu voglia",
+  "stegfy_description": "Cripta i tuoi messaggi dentro qualsiasi immagine e inviali dovunque tu voglia, tramite le molte app di messagistica supportate. Il ricevente potrà visualizzare il messaggio nascosto direttamente dal suo smartphone, con Stegfy. Opzionalmente, è possibile scegliere una password, per un ulteriore grado di protezione, come anche il tipo di algoritmo usato",
+  "stegfy_link": "https://github.com/CianciarusoCataldo/stegfy"
+}

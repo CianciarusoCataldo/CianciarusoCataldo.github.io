@@ -1,0 +1,13 @@
+{
+  "education_header": "Education",
+  "work_header": "Work",
+  "projects_header": "My Projects",
+  "projects_footer": "Go to my Projects Page",
+  "frameWorks_header": "Frameworks",
+  "skills_header": "Skills",
+  "programming_languages": "Programming Languages",
+  "songs_header": "My coding music",
+  "info_header": "About me",
+  "info_body": "Hi! I'm Cataldo Cianciaruso, an italian developer. Welcome to my portfolio page ! This Web-App is built upon a ready-to use template, already configured (it includes i18next, redux, react-router, etc.), that I designed to build React apps in a faster and smoother way. Take a look at my Github Page to know more !",
+  "info_footer": "Go to Info Page"
+}
