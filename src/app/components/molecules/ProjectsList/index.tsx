@@ -1,5 +1,3 @@
-import React from "react";
-
 import { PROJECTS_ICONS } from "assets/images";
 
 import { useProjectsPageTranslation } from "app/hooks/localization";

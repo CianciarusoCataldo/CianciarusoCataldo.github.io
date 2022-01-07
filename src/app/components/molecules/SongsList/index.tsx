@@ -1,11 +1,10 @@
-import React from "react";
 import classNames from "classnames";
 
-import IMAGES from "assets/images";
+import { IMAGES } from "assets/images";
 
 import SONGS from "api/constants/music";
 
-import { Divider } from "app/components/atoms";
+import { Divider } from "@cianciarusocataldo/modular-ui";
 
 const SongsList = ({ compact }: Widget) => (
   <div

@@ -1,75 +1,74 @@
-import React from "react";
+import LeftArrow from "./icons/commons/left-arrow.svg";
+import Burger from "./icons/commons/burger.svg";
+import Logo from "./icons/commons/logo.png";
 
-import FrameworksIcon from "./icons/frameworks-icon.svg";
-import WorkIcon from "./icons/work-icon.svg";
-import DegreeIcon from "./icons/degree-icon.svg";
-import DevelopingIcon from "./icons/code-icon.svg";
-import SkillsIcon from "./icons/skills-icon.svg";
-import MusicIcon from "./icons/music-icon.svg";
-import SongIcon from "./icons/song-icon.svg";
-
-import GithubLogo from "./quick_links/github-logo.svg";
-import TwitterLogo from "./quick_links/twitter-logo.svg";
-import FacebookLogo from "./quick_links/facebook-logo.svg";
-import LinkedinLogo from "./quick_links/linkedin-logo.svg";
-import CvLogo from "./quick_links/cv-logo.png";
-import BitLogo from "./quick_links/bit-logo.svg";
-import InstagramLogo from "./quick_links/instagram-logo.svg";
-import MailLogo from "./quick_links/mail-logo.svg";
-import TelegramLogo from "./quick_links/telegram-logo.svg";
-
-import LeftArrow from "./left-arrow.svg";
-import Burger from "./burger.svg";
-import Preloader from "./preloader.svg";
 import ProfileIcon from "./profile.png";
 
-import UnicalIcon from "./icons/unical-icon.jpg";
-import ComcastIcon from "./logo/comcast-logo.svg";
-import XcalIcon from "./logo/xcal-logo.png";
+import GithubLogo from "./icons/quick_links/github-logo.svg";
+import TwitterLogo from "./icons/quick_links/twitter-logo.svg";
+import FacebookLogo from "./icons/quick_links/facebook-logo.svg";
+import LinkedinLogo from "./icons/quick_links/linkedin-logo.svg";
+import CvLogo from "./icons/quick_links/cv-logo.png";
+import BitLogo from "./icons/quick_links/bit-logo.svg";
+import InstagramLogo from "./icons/quick_links/instagram-logo.svg";
+import MailLogo from "./icons/quick_links/mail-logo.svg";
+import TelegramLogo from "./icons/quick_links/telegram-logo.svg";
 
-import ProjectsPageIcon from "./pages/projects-page.svg";
-import InfoIcon from "./pages/info-page.svg";
-import Home from "./pages/home.svg";
+import FrameworksIcon from "./icons/custom/frameworks-icon.svg";
+import WorkIcon from "./icons/custom/work-icon.svg";
+import DegreeIcon from "./icons/custom/degree-icon.svg";
+import DevelopingIcon from "./icons/custom/code-icon.svg";
+import SkillsIcon from "./icons/custom/skills-icon.svg";
+import MusicIcon from "./icons/custom/music-icon.svg";
+import SongIcon from "./icons/custom/song-icon.svg";
+import UnicalIcon from "./icons/custom/unical-icon.jpg";
 
-import NNBackendIcon from "./projects/nn-image-analyzer-logo.jpg";
-import NNAndroidIcon from "./projects/nn-image-analyzer-android-logo.jpg";
-import StegfyIcon from "./projects/stegfy-logo.jpg";
-import DemoUiIcon from "./projects/demo-ui-logo.png";
+import ComcastIcon from "./icons/commons/comcast-logo.svg";
+import XcalIcon from "./icons/commons/xcal-logo.png";
 
-import IT_FLAG from "./langs/it.svg";
-import FR_FLAG from "./langs/fr.svg";
-import EN_FLAG from "./langs/en.svg";
-import DE_FLAG from "./langs/de.svg";
-import ES_FLAG from "./langs/es.svg";
+import NNBackendIcon from "./icons/projects/nn-image-analyzer-logo.jpg";
+import NNAndroidIcon from "./icons/projects/nn-image-analyzer-android-logo.jpg";
+import StegfyIcon from "./icons/projects/stegfy-logo.jpg";
+import DemoUiIcon from "./icons/projects/demo-ui-logo.png";
 
-export const PRELOADED_IMAGES = [
-  LeftArrow,
-  Burger,
-  Preloader,
-  ProfileIcon,
-  EN_FLAG,
-  ES_FLAG,
-  DE_FLAG,
-  EN_FLAG,
-  FR_FLAG,
-  GithubLogo,
-  TwitterLogo,
-  FacebookLogo,
-  LinkedinLogo,
-  CvLogo,
-  BitLogo,
-  InstagramLogo,
-  MailLogo,
-  TelegramLogo,
-];
+import ProjectsPageIcon from "./icons/pages/projects-page.svg";
+import InfoIcon from "./icons/pages/info-page.svg";
+import Home from "./icons/pages/home.svg";
 
-export const LANGUAGES_ICONS = {
+import IT_FLAG from "./icons/langs/it.svg";
+import FR_FLAG from "./icons/langs/fr.svg";
+import EN_FLAG from "./icons/langs/en.svg";
+import DE_FLAG from "./icons/langs/de.svg";
+import ES_FLAG from "./icons/langs/es.svg";
+
+/** App logo */
+export const LogoIcon = <img alt="" src={Logo} width={100} height={100} />;
+
+export const LeftArrowIcon = <img alt="" src={LeftArrow} />;
+
+export const BurgerIcon = <img alt="" src={Burger} width={60} />;
+
+export const HomeIcon = <img alt="" src={Home} width={30} />;
+
+export const LANGUAGES_ICONS: Record<string, JSX.Element> = {
   it: <img alt="" width={20} height={20} src={IT_FLAG} />,
   de: <img alt="" width={20} height={20} src={DE_FLAG} />,
   fr: <img alt="" width={20} height={20} src={FR_FLAG} />,
   es: <img alt="" width={20} height={20} src={ES_FLAG} />,
   en: <img alt="" width={20} height={20} src={EN_FLAG} />,
-} as const;
+};
+
+export const QUICK_LINKS_ICONS = {
+  github: <img alt="" width={30} height={30} src={GithubLogo} />,
+  cv: <img alt="" width={30} height={30} src={CvLogo} />,
+  instagram: <img alt="" width={30} height={30} src={InstagramLogo} />,
+  facebook: <img alt="" width={30} height={30} src={FacebookLogo} />,
+  mail: <img alt="" width={30} height={30} src={MailLogo} />,
+  twitter: <img alt="" width={30} height={30} src={TwitterLogo} />,
+  linkedIn: <img alt="" width={30} height={30} src={LinkedinLogo} />,
+  bit: <img alt="" width={30} height={30} src={BitLogo} />,
+  telegram: <img alt="" width={30} height={30} src={TelegramLogo} />,
+};
 
 export const PROJECTS_ICONS = [
   {
@@ -94,7 +93,7 @@ export const PROJECTS_ICONS = [
   },
 ];
 
-const IMAGES = {
+export const IMAGES = {
   ICONS: {
     WORK: <img alt="" width={90} height={90} src={WorkIcon} />,
     FRAMEWORKS: <img alt="" width={90} height={90} src={FrameworksIcon} />,
@@ -156,26 +155,3 @@ const IMAGES = {
     ),
   },
 };
-
-export const QUICK_LINKS_ICONS = {
-  github: <img alt="" width={30} height={30} src={GithubLogo} />,
-  cv: <img alt="" width={30} height={30} src={CvLogo} />,
-  instagram: <img alt="" width={30} height={30} src={InstagramLogo} />,
-  facebook: <img alt="" width={30} height={30} src={FacebookLogo} />,
-  mail: <img alt="" width={30} height={30} src={MailLogo} />,
-  twitter: <img alt="" width={30} height={30} src={TwitterLogo} />,
-  linkedIn: <img alt="" width={30} height={30} src={LinkedinLogo} />,
-  bit: <img alt="" width={30} height={30} src={BitLogo} />,
-  telegram: <img alt="" width={30} height={30} src={TelegramLogo} />,
-};
-
-export const LeftArrowImage = () => <img alt="" src={LeftArrow} />;
-export const DownArrowIcon = () => (
-  <div className="ml-2 mr-1 mt-3 transform -rotate-90">
-    <img className="m-auto" alt="" src={LeftArrow} width={10} />
-  </div>
-);
-export const BurgerIcon = () => <img alt="" src={Burger} width={60} />;
-export const PreloaderImage = <img alt="" src={Preloader} />;
-
-export default IMAGES;

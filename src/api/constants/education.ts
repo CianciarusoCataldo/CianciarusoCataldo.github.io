@@ -1,4 +1,4 @@
-import IMAGES from "assets/images";
+import { IMAGES } from "assets/images";
 
 export const STUDIES = [
   {

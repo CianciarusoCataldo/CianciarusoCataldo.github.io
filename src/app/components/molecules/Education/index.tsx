@@ -1,6 +1,6 @@
 import React from "react";
 
-import IMAGES from "assets/images";
+import { IMAGES } from "assets/images";
 
 import { STUDIES } from "api/constants/education";
 

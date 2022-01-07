@@ -1,5 +1,3 @@
-import React from "react";
-
 import { SkillSetProps } from "./types";
 
 const SkillSet = ({ skills }: SkillSetProps) => (

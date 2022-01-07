@@ -1,6 +1,8 @@
-declare type RouteKey = "HOME" | "INFO" | "PROJECTS";
-declare type SupportedLanguage = "en" | "es" | "de" | "fr" | "it";
-
+//Shared types
+declare type Status = "EMPTY" | "BUSY" | "READY" | "ERROR";
+declare type AnimationKey = "NONE" | "FADE" | "SLIDE";
+declare type ToastKey = "success" | "warning" | "error" | "info" | "dark";
+declare type UnionOf<T> = T[keyof T];
 declare interface Skill {
   name: string;
   expertise: number;
