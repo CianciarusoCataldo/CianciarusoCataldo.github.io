@@ -15,6 +15,7 @@ import {
 
 import { Drawer } from "@cianciarusocataldo/modular-ui";
 import { useTranslation } from "react-i18next";
+import { isActualRoute } from "api/helpers/route-helper";
 
 /** Custom Modular-app laguage drawer */
 const AppDrawer = () => {
@@ -51,13 +52,7 @@ const AppDrawer = () => {
             dispatch(requestRoute(HOME));
             dispatch(closeDrawer());
           },
-          isActiveCallback: () =>
-            window.location.pathname === HOME ||
-            window.location.pathname.substring(
-              0,
-              window.location.pathname.length - 1
-            ) === HOME ||
-            `${window.location.pathname}/` === HOME,
+          isActiveCallback: () => isActualRoute(HOME),
         },
         ...Object.keys(PATHS)
           .sort()
@@ -68,13 +63,7 @@ const AppDrawer = () => {
                 dispatch(requestRoute(PATHS[route]));
                 dispatch(closeDrawer());
               },
-              isActiveCallback: () =>
-                window.location.pathname === PATHS[route] ||
-                window.location.pathname.substring(
-                  0,
-                  window.location.pathname.length - 1
-                ) === PATHS[route] ||
-                `${window.location.pathname}/` === PATHS[route],
+              isActiveCallback: () => isActualRoute(PATHS[route]),
             };
           }),
       ]}
