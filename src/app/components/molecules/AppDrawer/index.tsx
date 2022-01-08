@@ -9,20 +9,22 @@ import {
 } from "api/core/store/internal-slices/ui/selectors";
 import {
   getHomePage,
+  geti18nConfig,
   getPages,
 } from "api/core/store/internal-slices/config/selectors";
 
 import { Drawer } from "@cianciarusocataldo/modular-ui";
-import { usePageTitlesTranslation } from "app/hooks/localization";
+import { useTranslation } from "react-i18next";
 
 /** Custom Modular-app laguage drawer */
 const AppDrawer = () => {
   const dispatch = useDispatch();
   const PATHS = useSelector(getPages);
+  const I18N = useSelector(geti18nConfig);
   const isDrawerShowing = useSelector(isDrawerOpen);
   const darkMode = useSelector(isInDarkMode);
   const HOME = useSelector(getHomePage);
-  const t = usePageTitlesTranslation();
+  const { t } = useTranslation(I18N.PAGES_NAMESPACE || "page-titles");
 
   React.useEffect(() => {
     if (isDrawerShowing) {

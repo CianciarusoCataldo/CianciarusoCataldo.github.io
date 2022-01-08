@@ -33,8 +33,8 @@ export const initi18n = (CONFIG: Config) => {
         ],
       },
       ns: [
-        CONFIG.I18N.PAGES_NAMESPACE,
-        CONFIG.I18N.MODALS_NAMESPACE,
+        CONFIG.I18N.PAGES_NAMESPACE || "page-titles",
+        CONFIG.I18N.MODALS_NAMESPACE || "modal-titles",
         ...CONFIG.I18N.NAMESPACES,
       ],
       defaultNS: CONFIG.I18N.DEFAULT_NAMESPACE,
