@@ -1,7 +1,7 @@
 import { IMAGES, QUICK_LINKS_ICONS } from "assets/images";
 
 import {
-  useCommonTranslation,
+  useQuickLinksTranslation,
   useInfoPageTranslation,
 } from "app/hooks/localization";
 
@@ -11,7 +11,7 @@ import AppPage from "app/components/molecules/AppPage";
 
 const InfoPage = () => {
   const t = useInfoPageTranslation();
-  const tCommon = useCommonTranslation();
+  const tQuickLinks = useQuickLinksTranslation();
 
   return (
     <AppPage>
@@ -28,7 +28,7 @@ const InfoPage = () => {
                   <li className="mt-2" key={quickLink}>
                     <a
                       className="hover:text-blue-500"
-                      href={tCommon("quickLinks", { context: quickLink })}
+                      href={tQuickLinks("quickLinks", { context: quickLink })}
                     >
                       {quickLink.charAt(0).toUpperCase() + quickLink.slice(1)}
                     </a>

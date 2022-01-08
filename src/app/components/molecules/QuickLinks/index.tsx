@@ -1,10 +1,10 @@
-import { useCommonTranslation } from "app/hooks/localization";
+import { useQuickLinksTranslation } from "app/hooks/localization";
 
 import LanguageSelector from "../LanguageSelector";
 import { QUICK_LINKS_ICONS } from "assets/images";
 
 const QuickLinks = () => {
-  const t = useCommonTranslation();
+  const t = useQuickLinksTranslation();
 
   return (
     <div className="fixed z-20 bottom-0 right-0 left-0 border-b-2 bg-gray-600 flex flex-row p-2">

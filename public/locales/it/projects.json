@@ -6,7 +6,7 @@
   "demoUi_link": "https://github.com/CianciarusoCataldo/demo-ui",
   "nnIa_title": "AI image detector",
   "nnIa_subTitle": "Un sistema distribuito per reti Neurali",
-  "nnIa_description": "AI image detector è Un sistema distribuito per reti Neurali, che analizza qualsiasi immagina alla ricerca di oggetti e volti. Da questi ultimi, è in grado di rilevare, con buona percentuale, età stimata, sesso ed emozioni. Usa un approccio distribuito e modulare, rendendo semplice la progettazione di un sistema personalizzato a partire da esso. Visita la pagina Github ufficiale, contattami per qualunque feedback !",
+  "nnIa_description": "AI image detector è un sistema distribuito per reti Neurali, che analizza qualsiasi immagina alla ricerca di oggetti e volti. Da questi ultimi, è in grado di rilevare, con buona percentuale, età stimata, sesso ed emozioni. Usa un approccio distribuito e modulare, rendendo semplice la progettazione di un sistema personalizzato a partire da esso. Visita la pagina Github ufficiale, contattami per qualunque feedback !",
   "nnIa_link": "https://github.com/CianciarusoCataldo/nn-dispatcher",
   "nnIaAndroid_title": "AI image detector Android client",
   "nnIaAndroid_subTitle": "Un client Android per AI image detector",
@@ -15,5 +15,13 @@
   "stegfy_title": "Stegfy",
   "stegfy_subTitle": "Cripta i tuoi messaggi dentro qualsiasi immagine e inviali dovunque tu voglia",
   "stegfy_description": "Cripta i tuoi messaggi dentro qualsiasi immagine e inviali dovunque tu voglia, tramite le molte app di messagistica supportate. Il ricevente potrà visualizzare il messaggio nascosto direttamente dal suo smartphone, con Stegfy. Opzionalmente, è possibile scegliere una password, per un ulteriore grado di protezione, come anche il tipo di algoritmo usato",
-  "stegfy_link": "https://github.com/CianciarusoCataldo/stegfy"
+  "stegfy_link": "https://github.com/CianciarusoCataldo/stegfy",
+  "modularApp_title": "Modular-app",
+  "modularApp_subTitle": "Una applicazione react pronta all'uso, una base perfetta per ogni applicazione web. Sviluppa la tua applicazione da qui!",
+  "modularApp_description": "Una applicazione React pronta all'uso, pre-configurata con le ultime versioni dei più recenti tools (tra i quali Tailwind, i18next e Redux), una base perfetta per ogni applicazione web. Sviluppa la tua applicazione da qui!",
+  "modularApp_link": "https://github.com/CianciarusoCataldo/modular-app",
+  "modularUi_title": "Modular-ui",
+  "modularUi_subTitle": "Componenti react, adatti ad ogni applicazione web",
+  "modularUi_description": "Vuoi realizzare una robusta web-app senza preoccuparti di mantenere una codebase dedicata per ogni suo componente? modular-ui è ciò che stai cercando. Installa questa libreria sulla tua app in un minuto, e importa i componenti che desideri utilizzare, senza codice aggiuntivo, ma con un controllo completo su ognuno di essi (sono completamente personalizzabili, specialmente se usati con Tailwind ). Questa libreria è usata da modular-app (questa web-app è costruita a partire da questo progetto, dai un'occhiata per saperne di più ! )",
+  "modularUi_link": "https://github.com/CianciarusoCataldo/modular-ui"
 }

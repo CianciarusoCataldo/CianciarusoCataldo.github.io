@@ -15,5 +15,13 @@
   "stegfy_title": "Stegfy",
   "stegfy_subTitle": "Hide your text into any image and send it wherever you want",
   "stegfy_description": "Hide your text into any image and send it wherever you want, with many messaging app. The receiver can easily retrieve secret text from original image using Stegfy. Optionally, you can also protect your text with password, and compress the text with some strong alghoritms.",
-  "stegfy_link": "https://github.com/CianciarusoCataldo/stegfy"
+  "stegfy_link": "https://github.com/CianciarusoCataldo/stegfy",
+  "modularApp_title": "Modular-app",
+  "modularApp_subTitle": "A ready to use react app, a perfect base for your web-app. Build your app from here !",
+  "modularApp_description": "A ready to use react app, pre-configured with the latest, updated, tools (like Tailwind, i18next and Redux), a perfect base for your web-app. Build your app from here !",
+  "modularApp_link": "https://github.com/CianciarusoCataldo/modular-app",
+  "modularUi_title": "Modular-ui",
+  "modularUi_subTitle": "React components for every web app",
+  "modularUi_description": "Want to build a powerful web app without developing and maintaining a codebase for every single component? modular-ui is what you are looking for. Just install it and import what you need, without any additional code, but with full control on every component (all of them are completely customizable, expecially when used with Tailwind class names). This library is used by modular-app (this web-app is built upon it, check it out to know more! )",
+  "modularUi_link": "https://github.com/CianciarusoCataldo/modular-ui"
 }

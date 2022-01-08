@@ -30,6 +30,8 @@ import NNBackendIcon from "./icons/projects/nn-image-analyzer-logo.jpg";
 import NNAndroidIcon from "./icons/projects/nn-image-analyzer-android-logo.jpg";
 import StegfyIcon from "./icons/projects/stegfy-logo.jpg";
 import DemoUiIcon from "./icons/projects/demo-ui-logo.png";
+import ModularUiIcon from "./icons/projects/modular-ui-logo.png";
+import ModularAppIcon from "./icons/projects/modular-app-logo.png";
 
 import ProjectsPageIcon from "./icons/pages/projects-page.svg";
 import InfoIcon from "./icons/pages/info-page.svg";
@@ -71,6 +73,16 @@ export const QUICK_LINKS_ICONS = {
 };
 
 export const PROJECTS_ICONS = [
+  {
+    name: "modularUi",
+    icon: <img alt="" width={400} src={ModularUiIcon} />,
+    icon_small: <img alt="" width={100} src={ModularUiIcon} />,
+  },
+  {
+    name: "modularApp",
+    icon: <img alt="" width={400} src={ModularAppIcon} />,
+    icon_small: <img alt="" width={100} src={ModularAppIcon} />,
+  },
   {
     name: "demoUi",
     icon: <img alt="" width={400} src={DemoUiIcon} />,
