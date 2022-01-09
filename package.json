@@ -1,6 +1,6 @@
 {
   "name": "cataldo-cianciaruso-portfolio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@cianciarusocataldo/modular-ui": "^2.1.1",

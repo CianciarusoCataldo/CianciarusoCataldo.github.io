@@ -2,7 +2,7 @@ import React from "react";
 
 import { IMAGES } from "assets/images";
 
-import { STUDIES } from "api/constants/education";
+import { STUDIES } from "app/constants/education";
 
 import { useEducationTranslation } from "app/hooks/localization";
 

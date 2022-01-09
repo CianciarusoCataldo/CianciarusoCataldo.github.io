@@ -3,7 +3,7 @@ import {
   FRAMEWORKS,
   PROGRAMMING_LANGUAGESS,
   SKILLS,
-} from "api/constants/skills";
+} from "app/constants/skills";
 import { getPages } from "api/core/store/internal-slices/config/selectors";
 import RouterLink from "app/components/atoms/RouterLink";
 import AppPage from "app/components/molecules/AppPage";

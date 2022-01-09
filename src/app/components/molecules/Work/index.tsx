@@ -1,6 +1,6 @@
 import { IMAGES } from "assets/images";
 
-import WORKS from "api/constants/work";
+import WORKS from "app/constants/work";
 
 import { useWorkTranslation } from "app/hooks/localization";
 

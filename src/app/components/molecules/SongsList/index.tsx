@@ -2,7 +2,7 @@ import classNames from "classnames";
 
 import { IMAGES } from "assets/images";
 
-import SONGS from "api/constants/music";
+import SONGS from "app/constants/music";
 
 import { Divider } from "@cianciarusocataldo/modular-ui";
 
