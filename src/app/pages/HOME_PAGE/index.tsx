@@ -4,7 +4,7 @@ import {
   PROGRAMMING_LANGUAGESS,
   SKILLS,
 } from "app/constants/skills";
-import { getPages } from "api/core/store/internal-slices/config/selectors";
+import { getPages } from "@cianciarusocataldo/modular-engine";
 import RouterLink from "app/components/atoms/RouterLink";
 import AppPage from "app/components/molecules/AppPage";
 import Education from "app/components/molecules/Education";
@@ -27,35 +27,31 @@ const HomePage = () => {
         <div className="flex flex-col w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 3xl:w-3/5">
           <Card
             icon={IMAGES.PAGES.INFO}
-            title={t("info", { context: "header" })}
+            header={t("info", { context: "header" })}
             className="w-full m-auto"
             body={
               <p className=" p-3 text-2xl">{t("info", { context: "body" })}</p>
             }
             footer={
-              <RouterLink
-                className="text-lg font-bold"
-                to={PAGES.INFO}
-                label={t("info", { context: "footer" })}
-              />
+              <RouterLink className="text-lg font-bold" to={PAGES.INFO}>
+                {t("info", { context: "footer" })}
+              </RouterLink>
             }
           />
           <Card
             icon={IMAGES.PAGES.PROJECTS}
-            title={t("projects", { context: "header" })}
+            header={t("projects", { context: "header" })}
             className="w-full"
             body={<ProjectList compact />}
             footer={
-              <RouterLink
-                className="text-lg font-bold"
-                to={PAGES.PROJECTS}
-                label={t("projects", { context: "footer" })}
-              />
+              <RouterLink className="text-lg font-bold" to={PAGES.PROJECTS}>
+                {t("projects", { context: "footer" })}
+              </RouterLink>
             }
           />
           <Card
             icon={IMAGES.ICONS.SKILLS}
-            title={t("skills", { context: "header" })}
+            header={t("skills", { context: "header" })}
             className="w-full"
             body={<SkillSet skills={SKILLS} />}
           />
@@ -63,31 +59,31 @@ const HomePage = () => {
         <div className="w-full flex flex-col md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 3xl:w-2/5">
           <Card
             icon={IMAGES.ICONS.WORK}
-            title={t("work", { context: "header" })}
+            header={t("work", { context: "header" })}
             className="w-full"
             body={<Work />}
           />
           <Card
             icon={IMAGES.ICONS.EDUCATION}
-            title={t("education", { context: "header" })}
+            header={t("education", { context: "header" })}
             className="w-full"
             body={<Education />}
           />
           <Card
             icon={IMAGES.ICONS.DEVELOPING}
-            title={t("programming_languages", { context: "header" })}
+            header={t("programming_languages", { context: "header" })}
             className="w-full"
             body={<SkillSet skills={PROGRAMMING_LANGUAGESS} />}
           />
           <Card
             icon={IMAGES.ICONS.FRAMEWORKS}
-            title={t("frameWorks", { context: "header" })}
+            header={t("frameWorks", { context: "header" })}
             className="w-full"
             body={<SkillSet skills={FRAMEWORKS} />}
           />
           <Card
             icon={IMAGES.ICONS.MUSIC}
-            title={t("songs", { context: "header" })}
+            header={t("songs", { context: "header" })}
             className="w-full"
             body={<SongsList compact />}
           />

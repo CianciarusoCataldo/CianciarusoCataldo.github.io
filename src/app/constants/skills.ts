@@ -1,3 +1,5 @@
+import { Skill } from "app/types";
+
 export const PROGRAMMING_LANGUAGESS: Skill[] = [
   {
     name: "JS",

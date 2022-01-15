@@ -1,6 +1,7 @@
 import { PROJECTS_ICONS } from "assets/images";
 
 import { useProjectsPageTranslation } from "app/hooks/localization";
+import { Widget } from "app/types";
 
 const ProjectList = ({ compact }: Widget) => {
   const t = useProjectsPageTranslation();

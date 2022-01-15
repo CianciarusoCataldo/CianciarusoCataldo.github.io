@@ -6,11 +6,6 @@ export const useHomePageTranslation = () => {
   return t;
 };
 
-export const useQuickLinksTranslation = () => {
-  const { t } = useTranslation("quick-links");
-  return t;
-};
-
 export const useProjectsPageTranslation = () => {
   const { t } = useTranslation("projects");
 

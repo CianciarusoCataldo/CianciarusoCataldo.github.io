@@ -32,6 +32,7 @@ import StegfyIcon from "./icons/projects/stegfy-logo.jpg";
 import DemoUiIcon from "./icons/projects/demo-ui-logo.png";
 import ModularUiIcon from "./icons/projects/modular-ui-logo.png";
 import ModularAppIcon from "./icons/projects/modular-app-logo.png";
+import ModularEngineIcon from "./icons/projects/modular-engine-logo.png";
 
 import ProjectsPageIcon from "./icons/pages/projects-page.svg";
 import InfoIcon from "./icons/pages/info-page.svg";
@@ -60,9 +61,10 @@ export const LANGUAGES_ICONS: Record<string, JSX.Element> = {
   en: <img alt="" width={20} height={20} src={EN_FLAG} />,
 };
 
+export const CV_LOGO = <img alt="" width={30} height={30} src={CvLogo} />;
+
 export const QUICK_LINKS_ICONS = {
   github: <img alt="" width={30} height={30} src={GithubLogo} />,
-  cv: <img alt="" width={30} height={30} src={CvLogo} />,
   instagram: <img alt="" width={30} height={30} src={InstagramLogo} />,
   facebook: <img alt="" width={30} height={30} src={FacebookLogo} />,
   mail: <img alt="" width={30} height={30} src={MailLogo} />,
@@ -74,14 +76,19 @@ export const QUICK_LINKS_ICONS = {
 
 export const PROJECTS_ICONS = [
   {
+    name: "modularApp",
+    icon: <img alt="" width={400} src={ModularAppIcon} />,
+    icon_small: <img alt="" width={100} src={ModularAppIcon} />,
+  },
+  {
     name: "modularUi",
     icon: <img alt="" width={400} src={ModularUiIcon} />,
     icon_small: <img alt="" width={100} src={ModularUiIcon} />,
   },
   {
-    name: "modularApp",
-    icon: <img alt="" width={400} src={ModularAppIcon} />,
-    icon_small: <img alt="" width={100} src={ModularAppIcon} />,
+    name: "modularEngine",
+    icon: <img alt="" width={400} src={ModularEngineIcon} />,
+    icon_small: <img alt="" width={100} src={ModularEngineIcon} />,
   },
   {
     name: "demoUi",
@@ -107,12 +114,12 @@ export const PROJECTS_ICONS = [
 
 export const IMAGES = {
   ICONS: {
-    WORK: <img alt="" width={90} height={90} src={WorkIcon} />,
-    FRAMEWORKS: <img alt="" width={90} height={90} src={FrameworksIcon} />,
-    EDUCATION: <img alt="" width={90} height={90} src={DegreeIcon} />,
-    DEVELOPING: <img alt="" width={90} height={90} src={DevelopingIcon} />,
-    SKILLS: <img alt="" width={90} height={90} src={SkillsIcon} />,
-    MUSIC: <img alt="" width={90} height={90} src={MusicIcon} />,
+    WORK: <img alt="" width={60} height={60} src={WorkIcon} />,
+    FRAMEWORKS: <img alt="" width={60} height={90} src={FrameworksIcon} />,
+    EDUCATION: <img alt="" width={60} height={60} src={DegreeIcon} />,
+    DEVELOPING: <img alt="" width={60} height={60} src={DevelopingIcon} />,
+    SKILLS: <img alt="" width={60} height={60} src={SkillsIcon} />,
+    MUSIC: <img alt="" width={60} height={60} src={MusicIcon} />,
     SONG: <img alt="" width={40} height={40} src={SongIcon} />,
     DEGREE: (
       <img
@@ -142,9 +149,9 @@ export const IMAGES = {
     ),
   },
   PAGES: {
-    HOME: <img alt="" width={90} height={90} src={Home} />,
-    PROJECTS: <img alt="" width={90} height={90} src={ProjectsPageIcon} />,
-    INFO: <img alt="" width={90} height={90} src={InfoIcon} />,
+    HOME: <img alt="" width={60} height={60} src={Home} />,
+    PROJECTS: <img alt="" width={60} height={60} src={ProjectsPageIcon} />,
+    INFO: <img alt="" width={60} height={60} src={InfoIcon} />,
   },
   PROFILE: {
     SMALL: (

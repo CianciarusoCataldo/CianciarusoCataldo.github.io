@@ -3,7 +3,7 @@ export interface RouterLinkProps {
   to: string;
 
   /** Label showed into the button */
-  label: string;
+  children: string;
 
   /** A custom className applied on RouterLink component */
   className?: string;

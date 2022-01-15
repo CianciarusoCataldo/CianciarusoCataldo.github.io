@@ -23,5 +23,9 @@
   "modularUi_title": "Modular-ui",
   "modularUi_subTitle": "React components for every web app",
   "modularUi_description": "Want to build a powerful web app without developing and maintaining a codebase for every single component? modular-ui is what you are looking for. Just install it and import what you need, without any additional code, but with full control on every component (all of them are completely customizable, expecially when used with Tailwind class names). This library is used by modular-app (this web-app is built upon it, check it out to know more! )",
-  "modularUi_link": "https://github.com/CianciarusoCataldo/modular-ui"
+  "modularUi_link": "https://github.com/CianciarusoCataldo/modular-ui",
+  "modularEngine_title": "Modular-engine",
+  "modularEngine_subTitle": "Tools and functions to build every react app",
+  "modularEngine_description": "Enhance your web app with advanced features with few steps. This library provides a multilanguage localization system (with I18next), an improved global state management (with redux, with additionals features already built in) and a complete routing system, all configurable with a simple json file. This is also included into modular-app project. Check it out !",
+  "modularEngine_link": "https://github.com/CianciarusoCataldo/modular-engine"
 }

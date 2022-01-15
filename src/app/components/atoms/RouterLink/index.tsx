@@ -1,26 +1,19 @@
 import { NavLink } from "react-router-dom";
-import classnames from "classnames";
 
 import { RouterLinkProps } from "./types";
+import { Link } from "@cianciarusocataldo/modular-ui";
 
 /**
  *
  * @param to Destination path
- * @param label Label showed into the button
+ * @param children Label showed into the button
  * @param className A custom className applied on main container
  *
  */
-const RouterLink = ({ to, label, className }: RouterLinkProps) => {
+const RouterLink = ({ to, children, className }: RouterLinkProps) => {
   return (
     <NavLink to={to}>
-      <p
-        className={classnames(
-          "text-base text-blue-400 hover:text-blue-600 active:font-bold",
-          className
-        )}
-      >
-        {label}
-      </p>
+      <Link className={className}>{children}</Link>
     </NavLink>
   );
 };

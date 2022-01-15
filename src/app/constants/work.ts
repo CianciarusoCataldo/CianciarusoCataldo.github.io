@@ -1,3 +1,4 @@
+import { Work } from "app/types";
 import { IMAGES } from "assets/images";
 
 const WORKS: Work[] = [

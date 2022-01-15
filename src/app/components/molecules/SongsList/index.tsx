@@ -5,6 +5,7 @@ import { IMAGES } from "assets/images";
 import SONGS from "app/constants/music";
 
 import { Divider } from "@cianciarusocataldo/modular-ui";
+import { Widget } from "app/types";
 
 const SongsList = ({ compact }: Widget) => (
   <div

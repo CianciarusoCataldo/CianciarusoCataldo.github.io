@@ -4,7 +4,7 @@ import AppPage from "app/components/molecules/AppPage";
 
 const ProjectsPage = () => {
   return (
-    <AppPage orientation="orizontal">
+    <AppPage>
       <div className="w-full m-auto">
         <Card body={<ProjectList />} />
       </div>
