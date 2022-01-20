@@ -61,17 +61,17 @@ export const LANGUAGES_ICONS: Record<string, JSX.Element> = {
   en: <img alt="" width={20} height={20} src={EN_FLAG} />,
 };
 
-export const CV_LOGO = <img alt="" width={30} height={30} src={CvLogo} />;
+export const CV_LOGO = <img alt="" width={40} height={40} src={CvLogo} />;
 
 export const QUICK_LINKS_ICONS = {
-  github: <img alt="" width={30} height={30} src={GithubLogo} />,
-  instagram: <img alt="" width={30} height={30} src={InstagramLogo} />,
-  facebook: <img alt="" width={30} height={30} src={FacebookLogo} />,
-  mail: <img alt="" width={30} height={30} src={MailLogo} />,
-  twitter: <img alt="" width={30} height={30} src={TwitterLogo} />,
-  linkedIn: <img alt="" width={30} height={30} src={LinkedinLogo} />,
-  bit: <img alt="" width={30} height={30} src={BitLogo} />,
-  telegram: <img alt="" width={30} height={30} src={TelegramLogo} />,
+  github: <img alt="" width={40} height={40} src={GithubLogo} />,
+  instagram: <img alt="" width={40} height={40} src={InstagramLogo} />,
+  facebook: <img alt="" width={40} height={40} src={FacebookLogo} />,
+  mail: <img alt="" width={40} height={40} src={MailLogo} />,
+  twitter: <img alt="" width={40} height={40} src={TwitterLogo} />,
+  linkedIn: <img alt="" width={40} height={40} src={LinkedinLogo} />,
+  bit: <img alt="" width={40} height={40} src={BitLogo} />,
+  telegram: <img alt="" width={40} height={40} src={TelegramLogo} />,
 };
 
 export const PROJECTS_ICONS = [

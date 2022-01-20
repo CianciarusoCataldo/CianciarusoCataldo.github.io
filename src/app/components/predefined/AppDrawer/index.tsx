@@ -1,19 +1,20 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
 
 import {
   closeDrawer,
+  driveWithDarkMode,
   getHomePage,
   geti18nConfig,
   getPages,
   isActualRoute,
   isDrawerOpen,
-  isInDarkMode,
   requestRoute,
 } from "@cianciarusocataldo/modular-engine";
 
 import { Drawer } from "@cianciarusocataldo/modular-ui";
-import { useTranslation } from "react-i18next";
+import { Logo } from "app/contents/drawer";
 
 /** Custom Modular-app laguage drawer */
 const AppDrawer = () => {
@@ -21,9 +22,10 @@ const AppDrawer = () => {
   const PATHS = useSelector(getPages);
   const I18N = useSelector(geti18nConfig);
   const isDrawerShowing = useSelector(isDrawerOpen);
-  const darkMode = useSelector(isInDarkMode);
   const HOME = useSelector(getHomePage);
-  const { t } = useTranslation(I18N.PAGES_NAMESPACE || "page-titles");
+  const { t } = useTranslation(I18N.PAGES_NAMESPACE);
+
+  const ALL_PATHS: Record<string, string> = { ...PATHS, HOME_PAGE: HOME };
 
   React.useEffect(() => {
     if (isDrawerShowing) {
@@ -39,29 +41,23 @@ const AppDrawer = () => {
     }
   }, [dispatch, isDrawerShowing]);
 
+  const DrawerComponent = driveWithDarkMode(Drawer);
+
   return (
-    <Drawer
-      dark={darkMode}
+    <DrawerComponent
+      logo={<Logo />}
       hide={!isDrawerShowing}
       elements={[
-        {
-          text: t("HOME_PAGE"),
-          actionCallback: () => {
-            dispatch(requestRoute(HOME));
-            dispatch(closeDrawer());
-          },
-          isActiveCallback: () => isActualRoute(HOME),
-        },
-        ...Object.keys(PATHS)
+        ...Object.keys(ALL_PATHS)
           .sort()
           .map((route) => {
             return {
               text: t(route),
               actionCallback: () => {
-                dispatch(requestRoute(PATHS[route]));
+                dispatch(requestRoute(ALL_PATHS[route]));
                 dispatch(closeDrawer());
               },
-              isActiveCallback: () => isActualRoute(PATHS[route]),
+              isActiveCallback: () => isActualRoute(ALL_PATHS[route]),
             };
           }),
       ]}

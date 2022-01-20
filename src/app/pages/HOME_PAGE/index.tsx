@@ -5,8 +5,8 @@ import {
   SKILLS,
 } from "app/constants/skills";
 import { getPages } from "@cianciarusocataldo/modular-engine";
-import RouterLink from "app/components/atoms/RouterLink";
-import AppPage from "app/components/molecules/AppPage";
+import RouterLink from "app/components/predefined/RouterLink";
+import AppPage from "app/components/predefined/AppPage";
 import Education from "app/components/molecules/Education";
 import ProjectList from "app/components/molecules/ProjectsList";
 import SkillSet from "app/components/molecules/SkillSet";
@@ -26,6 +26,7 @@ const HomePage = () => {
       <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row">
         <div className="flex flex-col w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 3xl:w-3/5">
           <Card
+            shadow
             icon={IMAGES.PAGES.INFO}
             header={t("info", { context: "header" })}
             className="w-full m-auto"
@@ -39,6 +40,7 @@ const HomePage = () => {
             }
           />
           <Card
+            shadow
             icon={IMAGES.PAGES.PROJECTS}
             header={t("projects", { context: "header" })}
             className="w-full"
@@ -50,6 +52,7 @@ const HomePage = () => {
             }
           />
           <Card
+            shadow
             icon={IMAGES.ICONS.SKILLS}
             header={t("skills", { context: "header" })}
             className="w-full"
@@ -58,30 +61,35 @@ const HomePage = () => {
         </div>
         <div className="w-full flex flex-col md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 3xl:w-2/5">
           <Card
+            shadow
             icon={IMAGES.ICONS.WORK}
             header={t("work", { context: "header" })}
             className="w-full"
             body={<Work />}
           />
           <Card
+            shadow
             icon={IMAGES.ICONS.EDUCATION}
             header={t("education", { context: "header" })}
             className="w-full"
             body={<Education />}
           />
           <Card
+            shadow
             icon={IMAGES.ICONS.DEVELOPING}
             header={t("programming_languages", { context: "header" })}
             className="w-full"
             body={<SkillSet skills={PROGRAMMING_LANGUAGESS} />}
           />
           <Card
+            shadow
             icon={IMAGES.ICONS.FRAMEWORKS}
             header={t("frameWorks", { context: "header" })}
             className="w-full"
             body={<SkillSet skills={FRAMEWORKS} />}
           />
           <Card
+            shadow
             icon={IMAGES.ICONS.MUSIC}
             header={t("songs", { context: "header" })}
             className="w-full"

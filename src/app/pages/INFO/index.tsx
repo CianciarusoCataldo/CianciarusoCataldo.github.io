@@ -4,7 +4,7 @@ import { useInfoPageTranslation } from "app/hooks/localization";
 
 import SongsList from "app/components/molecules/SongsList";
 import { Card, Link } from "@cianciarusocataldo/modular-ui";
-import AppPage from "app/components/molecules/AppPage";
+import AppPage from "app/components/predefined/AppPage";
 
 const InfoPage = () => {
   const t = useInfoPageTranslation();
@@ -12,6 +12,7 @@ const InfoPage = () => {
   return (
     <AppPage>
       <Card
+        shadow
         icon={IMAGES.PAGES.INFO}
         header={t("about", { context: "header" })}
         body={
@@ -37,6 +38,7 @@ const InfoPage = () => {
         }
       />
       <Card
+        shadow
         icon={IMAGES.ICONS.MUSIC}
         header={t("songs", { context: "header" })}
         className="w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 3xl:w-1/2"
