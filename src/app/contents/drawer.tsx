@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 
 import { Button, Divider, DrawerElement } from "@cianciarusocataldo/modular-ui";
 
-export const DrawerLogo = () => <div/>;
+export const DrawerLogo = () => <div />;
 
 export const DrawerContent = () => {
   const dispatch = useDispatch();
