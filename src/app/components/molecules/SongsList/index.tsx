@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-import { IMAGES } from "assets/images";
+import { IMAGES } from "assets/images/custom";
 
 import SONGS from "app/constants/music";
 

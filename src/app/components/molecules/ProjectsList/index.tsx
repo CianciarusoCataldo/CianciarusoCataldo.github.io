@@ -1,4 +1,4 @@
-import { PROJECTS_ICONS } from "assets/images";
+import { PROJECTS_ICONS } from "assets/images/custom";
 
 import { useProjectsPageTranslation } from "app/hooks/localization";
 import { Widget } from "app/types";

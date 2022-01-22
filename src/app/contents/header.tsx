@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 
-import { BurgerIcon, IMAGES, LeftArrowIcon } from "assets/images";
+import { BurgerIcon, LeftArrowIcon } from "assets/images";
+import { IMAGES } from "assets/images/custom";
 
 import {
   getAppName,

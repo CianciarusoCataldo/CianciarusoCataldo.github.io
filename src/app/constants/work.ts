@@ -1,5 +1,5 @@
 import { Work } from "app/types";
-import { IMAGES } from "assets/images";
+import { IMAGES } from "assets/images/custom";
 
 const WORKS: Work[] = [
   {

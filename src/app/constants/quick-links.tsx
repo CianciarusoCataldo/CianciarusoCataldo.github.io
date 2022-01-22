@@ -1,4 +1,4 @@
-import { QUICK_LINKS_ICONS } from "assets/images";
+import { QUICK_LINKS_ICONS } from "assets/images/custom";
 
 const QUICK_LINKS: Record<string, { icon: JSX.Element; link: string }> = {
   facebook: {

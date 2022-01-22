@@ -1,10 +1,10 @@
-import { IMAGES } from "assets/images";
+import { IMAGES } from "assets/images/custom";
 import QUICK_LINKS from "app/constants/quick-links";
 import { useInfoPageTranslation } from "app/hooks/localization";
 
 import SongsList from "app/components/molecules/SongsList";
 import { Card, Link } from "@cianciarusocataldo/modular-ui";
-import AppPage from "app/components/predefined/AppPage";
+import AppPage from "api/predefined/components/AppPage";
 
 const InfoPage = () => {
   const t = useInfoPageTranslation();

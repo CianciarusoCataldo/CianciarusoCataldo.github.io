@@ -1,6 +1,6 @@
 import { Card } from "@cianciarusocataldo/modular-ui";
 import ProjectList from "app/components/molecules/ProjectsList";
-import AppPage from "app/components/predefined/AppPage";
+import AppPage from "api/predefined/components/AppPage";
 
 const ProjectsPage = () => {
   return (

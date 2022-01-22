@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { CV_FILES } from "assets/files";
 
 import QUICK_LINKS from "app/constants/quick-links";
-import { CV_LOGO } from "assets/images";
+import { CV_LOGO } from "assets/images/custom";
 import { Link } from "@cianciarusocataldo/modular-ui";
 import { getLanguage } from "@cianciarusocataldo/modular-engine";
 

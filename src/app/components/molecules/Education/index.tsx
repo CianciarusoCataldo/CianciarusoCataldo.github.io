@@ -1,6 +1,4 @@
-import React from "react";
-
-import { IMAGES } from "assets/images";
+import { IMAGES } from "assets/images/custom";
 
 import { STUDIES } from "app/constants/education";
 

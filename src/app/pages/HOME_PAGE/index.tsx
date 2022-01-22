@@ -1,20 +1,22 @@
-import { Card } from "@cianciarusocataldo/modular-ui";
+import { IMAGES } from "assets/images/custom";
+import { useSelector } from "react-redux";
+
 import {
   FRAMEWORKS,
   PROGRAMMING_LANGUAGESS,
   SKILLS,
 } from "app/constants/skills";
+
+import { useHomePageTranslation } from "app/hooks/localization";
 import { getPages } from "@cianciarusocataldo/modular-engine";
-import RouterLink from "app/components/predefined/RouterLink";
-import AppPage from "app/components/predefined/AppPage";
+
+import { Card } from "@cianciarusocataldo/modular-ui";
+import { AppPage, RouterLink } from "api/predefined/components";
 import Education from "app/components/molecules/Education";
 import ProjectList from "app/components/molecules/ProjectsList";
 import SkillSet from "app/components/molecules/SkillSet";
 import SongsList from "app/components/molecules/SongsList";
 import Work from "app/components/molecules/Work";
-import { useHomePageTranslation } from "app/hooks/localization";
-import { IMAGES } from "assets/images";
-import { useSelector } from "react-redux";
 
 /** Modular-app home page */
 const HomePage = () => {
