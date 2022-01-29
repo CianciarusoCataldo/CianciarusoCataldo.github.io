@@ -1,9 +1,9 @@
-import DarkMode from "./icons/commons/dark-mode.svg";
-import LightMode from "./icons/commons/light-mode.svg";
-
 import LeftArrow from "./icons/commons/left-arrow.svg";
 import Burger from "./icons/commons/burger.svg";
 import Logo from "./icons/commons/logo.png";
+
+import DarkMode from "./icons/commons/dark-mode.svg";
+import LightMode from "./icons/commons/light-mode.svg";
 
 import IT_FLAG from "./icons/langs/it.svg";
 import FR_FLAG from "./icons/langs/fr.svg";

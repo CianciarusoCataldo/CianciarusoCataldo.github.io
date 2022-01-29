@@ -1,11 +1,10 @@
 {
-  "name": "cataldo-cianciaruso-portfolio",
-  "version": "3.3.0",
+  "name": "cataldo-cianciaruso-portfolio-page",
+  "version": "4.0.0",
   "private": true,
   "homepage": "https://cianciarusocataldo.github.io",
   "dependencies": {
-    "@cianciarusocataldo/modular-engine": "^1.4.1",
-    "@cianciarusocataldo/modular-ui": "^4.0.0",
+    "@cianciarusocataldo/modular": "^0.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
@@ -65,7 +64,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -f -d build",
+    "deploy": "gh-pages -d build",
     "check-types": "tsc"
   }
 }
