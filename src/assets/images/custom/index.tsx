@@ -28,6 +28,7 @@ import StegfyIcon from "./projects/stegfy-logo.jpg";
 import DemoUiIcon from "./projects/demo-ui-logo.png";
 import ModularUiIcon from "./projects/modular-ui-logo.png";
 import ModularAppIcon from "./projects/modular-app-logo.png";
+import ModularIcon from "./projects/modular-logo.png";
 import ModularEngineIcon from "./projects/modular-engine-logo.png";
 
 import ProjectsPageIcon from "./pages/projects-page.svg";
@@ -51,9 +52,9 @@ export const QUICK_LINKS_ICONS = {
 
 export const PROJECTS_ICONS = [
   {
-    name: "modularApp",
-    icon: <img alt="" width={400} src={ModularAppIcon} />,
-    icon_small: <img alt="" width={100} src={ModularAppIcon} />,
+    name: "modular",
+    icon: <img alt="" width={400} src={ModularIcon} />,
+    icon_small: <img alt="" width={100} src={ModularIcon} />,
   },
   {
     name: "modularUi",
@@ -64,6 +65,11 @@ export const PROJECTS_ICONS = [
     name: "modularEngine",
     icon: <img alt="" width={400} src={ModularEngineIcon} />,
     icon_small: <img alt="" width={100} src={ModularEngineIcon} />,
+  },
+  {
+    name: "modularApp",
+    icon: <img alt="" width={400} src={ModularAppIcon} />,
+    icon_small: <img alt="" width={100} src={ModularAppIcon} />,
   },
   {
     name: "demoUi",

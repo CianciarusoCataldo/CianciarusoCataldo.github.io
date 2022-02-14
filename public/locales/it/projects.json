@@ -27,5 +27,9 @@
   "modularEngine_title": "Modular-engine",
   "modularEngine_subTitle": "Strumenti e funzionalità per realizzare qualsiasi app react",
   "modularEngine_description": "Enhance your web app with advanced features with few steps. This library provides a multilanguage localization system (with I18next), an improved global state management (with redux, with additionals features already built in) and a complete routing system, all configurable with a simple json file. This is also included into modular-app project. Check it out !",
-  "modularEngine_link": "https://github.com/CianciarusoCataldo/modular-engine"
+  "modularEngine_link": "https://github.com/CianciarusoCataldo/modular-engine",
+  "modular_title": "Modular",
+  "modular_subTitle": "Inizializza e configura la tua web-app in pochi e semplici passi",
+  "modular_description": "Vuoi realizzare velocemente una web app, ma non vuoi perdere tempo a configurare ogni cosa? Ci pensa Modular ! Questa libreria si occupa di inizializzare ogni aspetto della tua web-app, dal routing allo stato globale, dalle singole pagine al tema. Puoi personalizzare ogni cosa, e molto altro. Dai un'occhiata e scopri Modular !",
+  "modular_link": "https://github.com/CianciarusoCataldo/modular"
 }
