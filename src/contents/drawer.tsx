@@ -13,15 +13,11 @@ import { useTranslation } from "react-i18next";
 
 import { IMAGES } from "assets/images/custom";
 
-import {
-  getAppName,
-  driveWithDarkMode,
-} from "@cianciarusocataldo/modular-engine";
+import { driveWithDarkMode } from "@cianciarusocataldo/modular-engine";
 
 import { Button, Divider, Link } from "@cianciarusocataldo/modular-ui";
 
 export const DrawerLogo = () => {
-  const APP_NAME = useSelector(getAppName);
   const LinkComponent = driveWithDarkMode(Link);
 
   return (
@@ -29,10 +25,11 @@ export const DrawerLogo = () => {
       {IMAGES.PROFILE.SMALL}
       <LinkComponent
         to="https://github.com/CianciarusoCataldo/modular-app"
-        className="ml-1 text-lg break-all"
+        className="ml-1 text-lg break-words"
         newTab
       >
-        {APP_NAME}
+        <p>Cataldo Cianciaruso</p>
+        <p>Portfolio page</p>
       </LinkComponent>
     </div>
   );
