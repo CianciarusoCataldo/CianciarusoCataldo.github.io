@@ -1,23 +1,16 @@
 {
-  "header": {
-    "height": "20%",
-    "className": ""
-  },
-  "router": {
-    "height": "70%",
-    "className": ""
-  },
-  "footer": {
-    "height": "10%",
-    "className": ""
-  },
+  "header": {},
+  "router": {},
+  "footer": {},
+  "drawer": {},
   "body": {
-    "darkColor": "linear-gradient(to right, #3c4a5f, #4d5f7d)",
-    "lightColor": "linear-gradient(to right, #eaebec, #cccdcf)"
+    "dark": "radial-gradient(circle, rgba(67,51,108,1) 0%, rgba(60,45,102,1) 29%, rgba(51,37,103,1) 59%)",
+    "default": "linear-gradient(175deg, rgba(219,224,255,1) 0%, rgba(241,243,254,1) 59%, rgba(104,140,182,0.9948354341736695))"
   },
-  "dark": {
-    "textColor": "",
-    "background": "",
-    "backgroundColor": ""
+  "ui": {
+    "dark": {
+      "background": "linear-gradient(175deg, rgba(22,16,40,1) 0%, rgba(20,14,37,1) 29%, rgba(28,20,57,1) 59%)"
+    },
+    "default": {}
   }
 }

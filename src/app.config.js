@@ -16,7 +16,6 @@ const appConfig = {
   drawer: {
     content: DrawerContent,
     logo: DrawerLogo,
-    elements: [],
   },
 };
 
