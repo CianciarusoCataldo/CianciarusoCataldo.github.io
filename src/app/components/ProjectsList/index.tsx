@@ -8,7 +8,7 @@ const ProjectList = ({ compact }: Widget) => {
 
   return compact ? (
     <div className="h-64 overflow-auto">
-      {PROJECTS_ICONS.map(({ name, icon_small }, index) => {
+      {PROJECTS_ICONS.map(({ name }, index) => {
         return (
           <div
             className="flex flex-row py-2 border-b-2 border-gray-400"
