@@ -11,7 +11,7 @@ const FooterContent = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="flex flex-row p-2 mt-3">
+      <div className="flex flex-row p-2">
         <Link key="cv_file" className="mt-1" to={CV_FILES[lang]} newTab>
           <div className="mr-2" aria-label="cv">
             {CV_LOGO}

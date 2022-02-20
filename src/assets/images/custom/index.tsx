@@ -54,42 +54,34 @@ export const PROJECTS_ICONS = [
   {
     name: "modular",
     icon: <img alt="" width={400} src={ModularIcon} />,
-    icon_small: <img alt="" width={100} src={ModularIcon} />,
   },
   {
     name: "modularUi",
     icon: <img alt="" width={400} src={ModularUiIcon} />,
-    icon_small: <img alt="" width={100} src={ModularUiIcon} />,
   },
   {
     name: "modularEngine",
     icon: <img alt="" width={400} src={ModularEngineIcon} />,
-    icon_small: <img alt="" width={100} src={ModularEngineIcon} />,
   },
   {
     name: "modularApp",
     icon: <img alt="" width={400} src={ModularAppIcon} />,
-    icon_small: <img alt="" width={100} src={ModularAppIcon} />,
   },
   {
     name: "demoUi",
     icon: <img alt="" width={400} src={DemoUiIcon} />,
-    icon_small: <img alt="" width={100} src={DemoUiIcon} />,
   },
   {
     name: "nnIa",
     icon: <img alt="" width={400} src={NNBackendIcon} />,
-    icon_small: <img alt="" width={100} src={NNBackendIcon} />,
   },
   {
     name: "nnIaAndroid",
     icon: <img alt="" width={400} src={NNAndroidIcon} />,
-    icon_small: <img alt="" width={100} src={NNAndroidIcon} />,
   },
   {
     name: "stegfy",
     icon: <img alt="" width={400} src={StegfyIcon} />,
-    icon_small: <img alt="" width={100} src={StegfyIcon} />,
   },
 ];
 
@@ -137,11 +129,9 @@ export const IMAGES = {
   PROFILE: {
     SMALL: (
       <img
-        className="rounded-full"
         alt=""
         src={ProfileIcon}
-        width={90}
-        height={90}
+        className="rounded-full w-12 h-12 short:w-8 short:h-8 xsm:w-16 xsm:h-16 3xl:w-20 3xl:h-20"
       />
     ),
     BIG: (

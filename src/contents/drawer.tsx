@@ -2,6 +2,7 @@ import classNames from "classnames";
 
 import {
   closeDrawer,
+  driveWithDarkMode,
   getHomePage,
   geti18nConfig,
   getPages,
@@ -12,9 +13,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 
 import { IMAGES } from "assets/images/custom";
-
-import { driveWithDarkMode } from "@cianciarusocataldo/modular-engine";
-
 import { Button, Divider, Link } from "@cianciarusocataldo/modular-ui";
 
 export const DrawerLogo = () => {
@@ -34,6 +32,7 @@ export const DrawerLogo = () => {
     </div>
   );
 };
+
 export const DrawerContent = () => {
   const dispatch = useDispatch();
   const PATHS = useSelector(getPages);

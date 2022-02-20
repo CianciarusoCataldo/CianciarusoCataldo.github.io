@@ -1,7 +1,9 @@
 {
-  "header": {},
-  "router": {},
-  "footer": {},
+  "header": {
+    "style": { "height": "19%", "borderBottom": "2px solid #c0c0c0" }
+  },
+  "router": { "style": { "height": "74%" } },
+  "footer": { "style": { "height": "7%", "borderTop": "2px solid #c0c0c0" } },
   "drawer": {},
   "body": {
     "dark": "radial-gradient(circle, rgba(67,51,108,1) 0%, rgba(60,45,102,1) 29%, rgba(51,37,103,1) 59%)",
