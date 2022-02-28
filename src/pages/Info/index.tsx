@@ -3,7 +3,7 @@ import QUICK_LINKS from "app/constants/quick-links";
 import { useInfoPageTranslation } from "hooks/localization";
 
 import SongsList from "app/components/SongsList";
-import { Card, Link } from "@cianciarusocataldo/modular-ui";
+import { Card, Link, List } from "@cianciarusocataldo/modular-ui";
 import AppPage from "app/components/AppPage";
 
 const InfoPage = () => {
@@ -21,16 +21,13 @@ const InfoPage = () => {
               <div className="my-auto">{IMAGES.PROFILE.BIG}</div>
               <div className="m-auto ml-3">
                 <p>{t("about", { context: "contacts" })}</p>
-                {Object.keys(QUICK_LINKS).map((quickLink) => (
-                  <li className="mt-2" key={quickLink}>
-                    <Link
-                      //className="hover:text-blue-500"
-                      to={QUICK_LINKS[quickLink].link}
-                    >
+                <List
+                  elements={Object.keys(QUICK_LINKS).map((quickLink) => (
+                    <Link to={QUICK_LINKS[quickLink].link}>
                       {quickLink.charAt(0).toUpperCase() + quickLink.slice(1)}
                     </Link>
-                  </li>
-                ))}
+                  ))}
+                />
               </div>
             </div>
             <div className="mt-3">{t("about", { context: "body" })}</div>
