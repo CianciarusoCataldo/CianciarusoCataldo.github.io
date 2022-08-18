@@ -8,6 +8,6 @@
   "programming_languages": "Linguaggi di programmazione",
   "songs_header": "La mia playlist",
   "info_header": "Su di me",
-  "info_body": "Ciao ! Sono Cataldo Cianciaruso, benvenuti nella mia pagina Portfolio. Questa Web-App è realizzata sulla base di un template pre-configurato e pronto all'uso (incluso i18next, redux, react-router, etc.), che ho realizzato per lo sviluppo rapido di app React. Dai un'occhiata alla mia pagina Github per saperne di più !",
+  "info_body": "Ciao ! Sono Cataldo Cianciaruso, benvenuti nella mia pagina Portfolio !",
   "info_footer": "Visita la pagina informativa"
 }

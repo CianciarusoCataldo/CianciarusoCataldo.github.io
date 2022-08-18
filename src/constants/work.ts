@@ -1,4 +1,4 @@
-import { Work } from "app/types";
+import { Work } from "types";
 import { IMAGES } from "assets/images/custom";
 
 const WORKS: Work[] = [

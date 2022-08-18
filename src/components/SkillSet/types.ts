@@ -1,4 +1,4 @@
-import { Skill } from "app/types";
+import { Skill } from "types";
 
 export interface SkillSetProps {
   skills: Skill[];

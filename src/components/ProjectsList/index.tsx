@@ -1,14 +1,15 @@
-import { PROJECTS_ICONS } from "assets/images/custom";
+import { projectsIcons } from "assets/images/custom";
+import projects from "constants/projects";
 
 import { useProjectsPageTranslation } from "hooks/localization";
-import { Widget } from "app/types";
+import { Widget } from "types";
 
 const ProjectList = ({ compact }: Widget) => {
   const t = useProjectsPageTranslation();
 
   return compact ? (
     <div className="h-64 overflow-auto">
-      {PROJECTS_ICONS.map(({ name }, index) => {
+      {projects.map(({ name, link }, index) => {
         return (
           <div
             className="flex flex-row py-2 border-b-2 border-gray-400"
@@ -36,7 +37,7 @@ const ProjectList = ({ compact }: Widget) => {
     </div>
   ) : (
     <div>
-      {PROJECTS_ICONS.map(({ name, icon }, index) => {
+      {projects.map(({ name, link }, index) => {
         return (
           <div
             className="flex flex-col mt-4 py-2 border-b-2 border-gray-400"
@@ -45,13 +46,15 @@ const ProjectList = ({ compact }: Widget) => {
             <p className="m-auto text-4xl text-center py-1">
               {t(name, { context: "title" })}
             </p>
-            <div className="m-auto mt-8">{icon}</div>
+            {projectsIcons[name] && (
+              <div className="m-auto mt-8">{projectsIcons[name]}</div>
+            )}
             <p className="mt-4 text-xl px-2">
               {t(name, { context: "description" })}
             </p>
             <a
               className="m-auto mt-4 text-center text-2xl px-4 py-3 border-blue-900 bg-blue-900 text-white hover:text-blue-500 rounded-md"
-              href={t(name, { context: "link" })}
+              href={link}
             >
               {t("item", { context: "checkItOut" })}
             </a>

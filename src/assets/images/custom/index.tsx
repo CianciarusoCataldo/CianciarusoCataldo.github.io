@@ -26,10 +26,6 @@ import NNBackendIcon from "./projects/nn-image-analyzer-logo.jpg";
 import NNAndroidIcon from "./projects/nn-image-analyzer-android-logo.jpg";
 import StegfyIcon from "./projects/stegfy-logo.jpg";
 import DemoUiIcon from "./projects/demo-ui-logo.png";
-import ModularUiIcon from "./projects/modular-ui-logo.png";
-import ModularAppIcon from "./projects/modular-app-logo.png";
-import ModularIcon from "./projects/modular-logo.png";
-import ModularEngineIcon from "./projects/modular-engine-logo.png";
 
 import ProjectsPageIcon from "./pages/projects-page.svg";
 import InfoIcon from "./pages/info-page.svg";
@@ -50,40 +46,16 @@ export const QUICK_LINKS_ICONS = {
   telegram: <img alt="" width={40} height={40} src={TelegramLogo} />,
 };
 
-export const PROJECTS_ICONS = [
-  {
-    name: "modular",
-    icon: <img alt="" width={400} src={ModularIcon} />,
-  },
-  {
-    name: "modularUi",
-    icon: <img alt="" width={400} src={ModularUiIcon} />,
-  },
-  {
-    name: "modularEngine",
-    icon: <img alt="" width={400} src={ModularEngineIcon} />,
-  },
-  {
-    name: "modularApp",
-    icon: <img alt="" width={400} src={ModularAppIcon} />,
-  },
-  {
-    name: "demoUi",
-    icon: <img alt="" width={400} src={DemoUiIcon} />,
-  },
-  {
-    name: "nnIa",
-    icon: <img alt="" width={400} src={NNBackendIcon} />,
-  },
-  {
-    name: "nnIaAndroid",
-    icon: <img alt="" width={400} src={NNAndroidIcon} />,
-  },
-  {
-    name: "stegfy",
-    icon: <img alt="" width={400} src={StegfyIcon} />,
-  },
-];
+export const projectsIcons: Record<string, JSX.Element | null> = {
+  mobrixEngine: null,
+  mobrixUi: null,
+  mobrixDesigner: null,
+  mobrixApp: null,
+  demoUi: <img alt="" width={400} src={DemoUiIcon} />,
+  stegfy: <img alt="" width={400} src={StegfyIcon} />,
+  nnIaAndroid: <img alt="" width={400} src={NNAndroidIcon} />,
+  nnIa: <img alt="" width={400} src={NNBackendIcon} />,
+};
 
 export const IMAGES = {
   ICONS: {

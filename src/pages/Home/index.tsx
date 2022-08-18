@@ -1,28 +1,23 @@
 import { IMAGES } from "assets/images/custom";
 import { useSelector } from "react-redux";
 
-import {
-  FRAMEWORKS,
-  PROGRAMMING_LANGUAGESS,
-  SKILLS,
-} from "app/constants/skills";
+import { FRAMEWORKS, PROGRAMMING_LANGUAGESS, SKILLS } from "constants/skills";
 
 import { useHomePageTranslation } from "hooks/localization";
-import { getPages } from "@cianciarusocataldo/modular-engine";
+import { getRoutes } from "mobrix-engine-plugins";
 
-import { Card } from "@cianciarusocataldo/modular-ui";
-import Education from "app/components/Education";
-import ProjectList from "app/components/ProjectsList";
-import SkillSet from "app/components/SkillSet";
-import SongsList from "app/components/SongsList";
-import Work from "app/components/Work";
-import AppPage from "app/components/AppPage";
-import RouterLink from "app/components/RouterLink";
+import { Card } from "mobrix-ui";
+import Education from "components/Education";
+import ProjectList from "components/ProjectsList";
+import SkillSet from "components/SkillSet";
+import SongsList from "components/SongsList";
+import Work from "components/Work";
+import AppPage from "components/AppPage";
+import RouterLink from "components/RouterLink";
 
-/** Modular-app home page */
 const HomePage = () => {
   const t = useHomePageTranslation();
-  const PAGES = useSelector(getPages);
+  const PAGES = useSelector(getRoutes);
 
   return (
     <AppPage>

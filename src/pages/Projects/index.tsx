@@ -1,6 +1,6 @@
-import { Card } from "@cianciarusocataldo/modular-ui";
-import ProjectList from "app/components/ProjectsList";
-import AppPage from "app/components/AppPage";
+import { Card } from "mobrix-ui";
+import ProjectList from "components/ProjectsList";
+import AppPage from "components/AppPage";
 
 const ProjectsPage = () => {
   return (

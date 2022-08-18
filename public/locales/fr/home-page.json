@@ -1,1 +1,13 @@
-{}
+{
+  "education_header": "Education",
+  "work_header": "Work",
+  "projects_header": "My Projects",
+  "projects_footer": "Go to my Projects Page",
+  "frameWorks_header": "Frameworks",
+  "skills_header": "Skills",
+  "programming_languages": "Programming Languages",
+  "songs_header": "My coding music",
+  "info_header": "About me",
+  "info_body": "Hi! I'm Cataldo Cianciaruso, an italian developer. Welcome to my portfolio page !",
+  "info_footer": "Go to Info Page"
+}

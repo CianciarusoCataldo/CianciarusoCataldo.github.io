@@ -2,10 +2,10 @@ import classNames from "classnames";
 
 import { IMAGES } from "assets/images/custom";
 
-import SONGS from "app/constants/music";
+import SONGS from "constants/music";
 
-import { Divider } from "@cianciarusocataldo/modular-ui";
-import { Widget } from "app/types";
+import { Divider } from "mobrix-ui";
+import { Widget } from "types";
 
 const SongsList = ({ compact }: Widget) => (
   <div

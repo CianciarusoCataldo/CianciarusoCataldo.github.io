@@ -17,6 +17,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "files": ["src/app/types.d.ts"],
-  "include": ["src"]
+  "files": ["src/types.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/components/types.d.ts"]
 }

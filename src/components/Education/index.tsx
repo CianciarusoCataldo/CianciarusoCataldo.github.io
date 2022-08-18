@@ -1,6 +1,6 @@
 import { IMAGES } from "assets/images/custom";
 
-import { STUDIES } from "app/constants/education";
+import { STUDIES } from "constants/education";
 
 import { useEducationTranslation } from "hooks/localization";
 
