@@ -23,5 +23,8 @@
   "mobrixEngine_description": "Enhance your web app with advanced features with few steps, extendable with plugins. This is also included into MoBrix-app project. Check it out !",
   "mobrixDesigner_title": "MoBrix-creator",
   "mobrixDesigner_subTitle": "Setup and configure your web app with few steps",
-  "mobrixDesigner_description": "Do you want to build a web-app, without wasting time by configuring everything? MoBrix-designer do it for you ! You can customize everything, and its features can be extended with plugins. Take a look, and discover MoBrix-designer !"
+  "mobrixDesigner_description": "Do you want to build a web-app, without wasting time by configuring everything? MoBrix-designer do it for you ! You can customize everything, and its features can be extended with plugins. Take a look, and discover MoBrix-designer !",
+  "wikiFind_title": "WikiFind",
+  "wikiFind_subTitle": "Search, read and share any wikipedia page, using your Android device !",
+  "wikiFind_description": "Search, read and share any wikipedia page (with multilanguage api support, to use a specific Wikipedia version), using your Android device !"
 }

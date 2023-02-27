@@ -1,10 +1,8 @@
 import React from "react";
 
-import {
-  drawerPlugin,
-  formsPlugin,
-  pageRouterPlugin,
-} from "mobrix-designer-plugins";
+import { formsPlugin } from "mobrix-designer-plugin-forms";
+import { drawerPlugin } from "mobrix-designer-plugin-drawer";
+import { pageRouterPlugin } from "mobrix-designer-plugin-router";
 
 import { DrawerContent } from "contents/drawer";
 import footer from "contents/footer";

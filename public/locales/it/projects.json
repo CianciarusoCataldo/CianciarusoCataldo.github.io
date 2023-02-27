@@ -23,5 +23,8 @@
   "mobrixEngine_description": "Migliora la tua web app con funzionalità avanzate e ein pochi passi, estendibile tramite plugins. Questa libreria è anche utilizzata nel progetto MoBrix-app. Dai un'occhiata !",
   "mobrixDesigner_title": "MoBrix-designer",
   "mobrixDesigner_subTitle": "Inizializza e configura la tua web app in pochi passi",
-  "mobrixDesigner_description": "Vuoi realizzare una web-app, senza perdere tempo a configurare ogni cosa? MoBrix-designer lo fa per te ! Puoi personalizzare ogni parte dell'app, e le funzionalità possono essere estese tramite i plugins. Questa libreria è anche utilizzata nel progetto MoBrix-app. Dai un'occhiata, e scopri MoBrix-designer !"
+  "mobrixDesigner_description": "Vuoi realizzare una web-app, senza perdere tempo a configurare ogni cosa? MoBrix-designer lo fa per te ! Puoi personalizzare ogni parte dell'app, e le funzionalità possono essere estese tramite i plugins. Questa libreria è anche utilizzata nel progetto MoBrix-app. Dai un'occhiata, e scopri MoBrix-designer !",
+  "wikiFind_title": "WikiFind",
+  "wikiFind_subTitle": "Cerca, visualizza e condividi qualunque pagina di Wikipedia, col tuo dispositivo Android !",
+  "wikiFind_description": "Cerca, visualizza e condividi qualunque pagina di Wikipedia (con supporto api multilingua, che permette di scegliere quale versione di Wikipedia usare), col tuo dispositivo Android !"
 }

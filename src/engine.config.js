@@ -27,14 +27,13 @@ const engineConfig = {
     homePage: "Home",
     routes: {
       Home: "/",
-      Info: "/info",
       Projects: "/projects",
     },
   },
   localization: {
     fallbackLanguage: "en",
     supportedLanguages: ["en", "it", "es", "fr", "de"],
-    namespaces: ["home-page", "projects", "info", "work", "education"],
+    namespaces: ["home-page", "projects", "work", "education"],
     titlesNamespace: "page-title",
   },
   theme: {

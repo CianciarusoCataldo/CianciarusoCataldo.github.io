@@ -4,6 +4,10 @@ const projects = [
     link: "https://github.com/CianciarusoCataldo/mobrix-engine",
   },
   {
+    name: "wikiFind",
+    link: "https://github.com/CianciarusoCataldo/wiki-find",
+  },
+  {
     name: "mobrixDesigner",
     link: "https://github.com/CianciarusoCataldo/mobrix-designer",
   },

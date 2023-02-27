@@ -22,7 +22,7 @@ const RouterLink = ({ children, className, to }: RouterLinkProps) => {
         dispatch(goTo(to));
         dispatch(closeDrawer());
       }}
-      className="text-gray-700 hover:text-blue-700 py-1 text-lg"
+      className="text-gray-700 hover:text-blue-700 py-1 text-lg focus-visible:bg-transparent"
     >
       {children}
     </Button>

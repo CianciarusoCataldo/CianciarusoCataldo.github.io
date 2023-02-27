@@ -6,6 +6,10 @@ export const PROGRAMMING_LANGUAGESS: Skill[] = [
     expertise: 95,
   },
   {
+    name: "Kotlin",
+    expertise: 80,
+  },
+  {
     name: "Java",
     expertise: 85,
   },
@@ -44,20 +48,32 @@ export const SKILLS: Skill[] = [
     expertise: 85,
   },
   {
-    name: "AGILE worflow",
+    name: "Android - app developing",
+    expertise: 84,
+  },
+  {
+    name: "Android - Dagger",
     expertise: 75,
+  },
+  {
+    name: "Android - Compose",
+    expertise: 85,
+  },
+  {
+    name: "AGILE worflow",
+    expertise: 80,
   },
   {
     name: "Jira workflow",
-    expertise: 75,
+    expertise: 80,
+  },
+  {
+    name: "Elk",
+    expertise: 62,
   },
   {
     name: "Github management",
-    expertise: 87,
-  },
-  {
-    name: "Android app developing",
-    expertise: 70,
+    expertise: 90,
   },
   {
     name: "CMS management",
@@ -82,10 +98,6 @@ export const SKILLS: Skill[] = [
   {
     name: "SEO",
     expertise: 80,
-  },
-  {
-    name: "Abstract UI design",
-    expertise: 60,
   },
   {
     name: "Distributed Systems",

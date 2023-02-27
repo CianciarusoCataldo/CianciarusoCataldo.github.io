@@ -12,12 +12,6 @@ export const useProjectsPageTranslation = () => {
   return t;
 };
 
-export const useInfoPageTranslation = () => {
-  const { t } = useTranslation("info");
-
-  return t;
-};
-
 export const useWorkTranslation = () => {
   const { t } = useTranslation("work");
 
