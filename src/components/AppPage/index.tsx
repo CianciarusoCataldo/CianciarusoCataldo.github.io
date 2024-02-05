@@ -1,16 +1,25 @@
-import { AllowedComponent, Container } from "mobrix-ui";
-import { useSelector } from "react-redux";
 import { isInDarkMode } from "mobrix-engine-plugins";
+import { BuilderComponent, Container } from "mobrix-ui";
+import { useSelector } from "react-redux";
 
 const AppPage = ({
   children,
 }: {
-  children: AllowedComponent | AllowedComponent[];
+  children: BuilderComponent | BuilderComponent[];
 }) => {
-  const dark = useSelector(isInDarkMode);
+  const dark: boolean = useSelector(isInDarkMode);
 
   return (
-    <Container animated unstyled className="m-2" dark={dark}>
+    <Container
+      shadow={false}
+      animated={true}
+      background={false}
+      className="m-2"
+      dark={dark}
+      additionalProps={{
+        "data-mbx-animation": "fade-in",
+      }}
+    >
       {children}
     </Container>
   );

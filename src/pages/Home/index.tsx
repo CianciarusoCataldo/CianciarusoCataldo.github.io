@@ -1,4 +1,3 @@
-import { IMAGES } from "assets/images/custom";
 import { useSelector } from "react-redux";
 
 import { FRAMEWORKS, PROGRAMMING_LANGUAGESS, SKILLS } from "constants/skills";
@@ -17,24 +16,24 @@ import RouterLink from "components/RouterLink";
 
 const HomePage = () => {
   const t = useHomePageTranslation();
-  const PAGES = useSelector(getRoutes);
-
+  const PAGES: Record<string, any> = useSelector(getRoutes);
   return (
     <AppPage>
       <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row">
         <div className="flex flex-col w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 3xl:w-3/5">
           <Card
+            headerClassName="font-bold text-xl"
             shadow
-            icon={IMAGES.PAGES.INFO}
             header={t("info", { context: "header" })}
-            className="m-auto"
+            className="mb-5 mr-0 sm:flex-col md:mr-3 lg:mr-3 xl:mr-3 2xl:mr-3"
             body={
               <p className=" p-3 text-2xl">{t("info", { context: "body" })}</p>
             }
           />
           <Card
+            headerClassName="font-bold text-xl"
             shadow
-            icon={IMAGES.PAGES.PROJECTS}
+            className="mb-5 mr-0 sm:flex-col md:mr-3 lg:mr-3 xl:mr-3 2xl:mr-3"
             header={t("projects", { context: "header" })}
             body={<ProjectList compact />}
             footer={
@@ -44,40 +43,46 @@ const HomePage = () => {
             }
           />
           <Card
+            headerClassName="font-bold text-xl"
             shadow
-            icon={IMAGES.ICONS.SKILLS}
+            className="mb-5 mr-0 sm:flex-col md:mr-3 lg:mr-3 xl:mr-3 2xl:mr-3"
             header={t("skills", { context: "header" })}
             body={<SkillSet skills={SKILLS} />}
           />
         </div>
         <div className="w-full flex flex-col md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 3xl:w-2/5">
           <Card
+            headerClassName="font-bold text-xl"
+            className="mb-5 mr-0 sm:flex-col md:mr-3 lg:mr-3 xl:mr-3 2xl:mr-3"
             shadow
-            icon={IMAGES.ICONS.WORK}
             header={t("work", { context: "header" })}
             body={<Work />}
           />
           <Card
+            headerClassName="font-bold text-xl"
+            className="mb-5 mr-0 sm:flex-col md:mr-3 lg:mr-3 xl:mr-3 2xl:mr-3"
             shadow
-            icon={IMAGES.ICONS.EDUCATION}
             header={t("education", { context: "header" })}
             body={<Education />}
           />
           <Card
+            headerClassName="font-bold text-xl"
+            className="mb-5 mr-0 sm:flex-col md:mr-3 lg:mr-3 xl:mr-3 2xl:mr-3"
             shadow
-            icon={IMAGES.ICONS.DEVELOPING}
             header={t("programming_languages", { context: "header" })}
             body={<SkillSet skills={PROGRAMMING_LANGUAGESS} />}
           />
           <Card
+            headerClassName="font-bold text-xl"
+            className="mb-5 mr-0 sm:flex-col md:mr-3 lg:mr-3 xl:mr-3 2xl:mr-3"
             shadow
-            icon={IMAGES.ICONS.FRAMEWORKS}
             header={t("frameWorks", { context: "header" })}
             body={<SkillSet skills={FRAMEWORKS} />}
           />
           <Card
+            headerClassName="font-bold text-xl"
+            className="mb-5 mr-0 sm:flex-col md:mr-3 lg:mr-3 xl:mr-3 2xl:mr-3"
             shadow
-            icon={IMAGES.ICONS.MUSIC}
             header={t("songs", { context: "header" })}
             body={<SongsList compact />}
           />

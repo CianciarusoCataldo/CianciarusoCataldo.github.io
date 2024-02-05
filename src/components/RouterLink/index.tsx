@@ -14,7 +14,6 @@ import { RouterLinkProps } from "./types";
  */
 const RouterLink = ({ children, className, to }: RouterLinkProps) => {
   const dispatch = useDispatch();
-
   return (
     <Button
       unstyled

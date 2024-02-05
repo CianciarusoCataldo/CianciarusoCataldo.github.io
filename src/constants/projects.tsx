@@ -1,5 +1,9 @@
 const projects = [
   {
+    name: "mobrixUi",
+    link: "https://github.com/CianciarusoCataldo/mobrix-ui",
+  },
+  {
     name: "mobrixEngine",
     link: "https://github.com/CianciarusoCataldo/mobrix-engine",
   },
@@ -10,10 +14,6 @@ const projects = [
   {
     name: "mobrixDesigner",
     link: "https://github.com/CianciarusoCataldo/mobrix-designer",
-  },
-  {
-    name: "mobrixUi",
-    link: "https://github.com/CianciarusoCataldo/mobrix-ui",
   },
   {
     name: "mobrixApp",

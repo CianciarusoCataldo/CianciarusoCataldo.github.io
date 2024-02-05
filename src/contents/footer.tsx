@@ -7,8 +7,8 @@ import { Container, Link } from "mobrix-ui";
 import { getLanguage, isInDarkMode } from "mobrix-engine-plugins";
 
 const FooterContent = () => {
-  const lang = useSelector(getLanguage);
-  const dark = useSelector(isInDarkMode);
+  const lang: string = useSelector(getLanguage);
+  const dark: boolean = useSelector(isInDarkMode);
 
   return (
     <Container dark={dark}>

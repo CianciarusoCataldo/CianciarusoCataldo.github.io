@@ -1,5 +1,3 @@
-import classNames from "classnames";
-
 import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 
@@ -15,9 +13,9 @@ import {
 
 export const DrawerContent = () => {
   const dispatch = useDispatch();
-  const PATHS = useSelector(getRoutes);
+  const PATHS: Record<string, any> = useSelector(getRoutes);
   const i18n = useSelector(getLocalizationConfig);
-  const dark = useSelector(isInDarkMode);
+  const dark: boolean = useSelector(isInDarkMode);
 
   const { t } = useTranslation(i18n.titlesNamespace || i18n.defaultNamespace);
 
@@ -27,18 +25,14 @@ export const DrawerContent = () => {
         return (
           <div className="mt-1 mb-3" key={`drawer_app_element_${index}`}>
             <Button
-              unstyled
+              dark={dark}
+              background={false}
+              shadow={false}
               onClick={() => {
-                dispatch(goTo(PATHS[route]));
                 dispatch(closeDrawer());
+                dispatch(goTo(PATHS[route]));
               }}
-              className={classNames(
-                {
-                  "text-white": dark,
-                  "text-gray-600": !dark,
-                },
-                "hover:text-orange-500 text-xl"
-              )}
+              className="text-xl"
             >
               {t(route)}
             </Button>

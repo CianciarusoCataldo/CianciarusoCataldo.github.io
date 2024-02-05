@@ -2,6 +2,7 @@ import { projectsIcons } from "assets/images/custom";
 import projects from "constants/projects";
 
 import { useProjectsPageTranslation } from "hooks/localization";
+import { Button } from "mobrix-ui";
 import { Widget } from "types";
 
 const ProjectList = ({ compact }: Widget) => {
@@ -12,10 +13,10 @@ const ProjectList = ({ compact }: Widget) => {
       {projects.map(({ name, link }, index) => {
         return (
           <div
-            className="flex flex-row py-2 border-b-2 border-gray-400"
+            className="flex flex-col py-2 border-b-2 border-gray-400"
             key={`${name}_${index}`}
           >
-            <div className="m-2 text-left ml-2 flex flex-col w-3/5">
+            <div className="m-2 text-left ml-2 flex flex-col">
               <p className="text-xl md:text-2xl lg:text-2xl xl:text-xl 2xl:text-2xl mb-1 font-bold">
                 {t(name, { context: "title" })}
               </p>
@@ -24,12 +25,13 @@ const ProjectList = ({ compact }: Widget) => {
               </p>
             </div>
             <div className="flex flex-col m-auto">
-              <a
-                className="my-auto mx-2 text-sm md:text-md lg:text-md xl:text-md 2xl:text-md 3xl:text-md p-3 text-center border-blue-900 bg-blue-900 text-white hover:text-blue-500 rounded-md"
-                href={t(name, { context: "link" })}
+              <Button
+                dark={true}
+                shadow={false}
+                onClick={() => window.open(link, "_blank")}
               >
                 {t("item", { context: "checkItOut" })}
-              </a>
+              </Button>
             </div>
           </div>
         );
@@ -52,12 +54,13 @@ const ProjectList = ({ compact }: Widget) => {
             <p className="mt-4 text-xl px-2">
               {t(name, { context: "description" })}
             </p>
-            <a
-              className="m-auto mt-4 text-center text-2xl px-4 py-3 border-blue-900 bg-blue-900 text-white hover:text-blue-500 rounded-md"
-              href={link}
+            <Button
+              dark={true}
+              shadow={false}
+              onClick={() => window.open(link, "_blank")}
             >
               {t("item", { context: "checkItOut" })}
-            </a>
+            </Button>
           </div>
         );
       })}
