@@ -17,7 +17,7 @@
   "mobrixApp_description": "A ready to use react app, pre-configured with the latest, updated, tools (like Tailwind, i18next and Redux), a perfect base for your web-app. Build your app from here !",
   "mobrixUi_title": "MoBrix-ui",
   "mobrixUi_subTitle": "React components for every web app",
-  "mobrixUi_description": "Want to build a powerful web app without developing and maintaining a codebase for every single component? MoBrix-ui is what you are looking for. Just install it and import what you need, without any additional code, but with full control on every component (all of them are completely customizable, expecially when used with Tailwind class names). This library is used by MoBrix-app (this web-app is built upon it, check it out to know more! )",
+  "mobrixUi_description": "Want to build a powerful web app without developing and maintaining a codebase for every single component? MoBrix-ui is what you are looking for. Just install it and import what you need, without any additional code, but with full control on every component (all of them are completely customizable, expecially when used with Tailwind class names).",
   "mobrixEngine_title": "MoBrix-engine",
   "mobrixEngine_subTitle": "A tiny and powerful engine to extend your app with a lot of functionalities",
   "mobrixEngine_description": "Enhance your web app with advanced features with few steps, extendable with plugins. This is also included into MoBrix-app project. Check it out !",

@@ -2,7 +2,7 @@ import { projectsIcons } from "assets/images/custom";
 import projects from "constants/projects";
 
 import { useProjectsPageTranslation } from "hooks/localization";
-import { Button } from "mobrix-ui";
+import { Button, Card, Container } from "mobrix-ui";
 import { Widget } from "types";
 
 const ProjectList = ({ compact }: Widget) => {
@@ -38,33 +38,42 @@ const ProjectList = ({ compact }: Widget) => {
       })}
     </div>
   ) : (
-    <div>
+    <Container unstyled background={false}>
       {projects.map(({ name, link }, index) => {
         return (
-          <div
+          <Card
             className="flex flex-col mt-4 py-2 border-b-2 border-gray-400"
             key={`${name}_${index}`}
-          >
-            <p className="m-auto text-4xl text-center py-1">
-              {t(name, { context: "title" })}
-            </p>
-            {projectsIcons[name] && (
-              <div className="m-auto mt-8">{projectsIcons[name]}</div>
-            )}
-            <p className="mt-4 text-xl px-2">
-              {t(name, { context: "description" })}
-            </p>
-            <Button
-              dark={true}
-              shadow={false}
-              onClick={() => window.open(link, "_blank")}
-            >
-              {t("item", { context: "checkItOut" })}
-            </Button>
-          </div>
+            header={
+              <div>
+                <p className="m-auto text-4xl text-center py-1">
+                  {t(name, { context: "title" })}
+                </p>
+                {projectsIcons[name] && (
+                  <div className="m-auto mt-8 items-center flex flex-col">
+                    {projectsIcons[name]}
+                  </div>
+                )}
+              </div>
+            }
+            body={
+              <p className="mt-4 text-xl px-2">
+                {t(name, { context: "description" })}
+              </p>
+            }
+            footer={
+              <Button
+                dark={true}
+                shadow={false}
+                onClick={() => window.open(link, "_blank")}
+              >
+                {t("item", { context: "checkItOut" })}
+              </Button>
+            }
+          />
         );
       })}
-    </div>
+    </Container>
   );
 };
 

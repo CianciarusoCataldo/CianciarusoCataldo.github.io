@@ -58,7 +58,7 @@ const HeaderContent = () => {
             <Toggle
               onIcon={LightModeIcon}
               offIcon={DarkModeIcon}
-              shadow
+              shadow={false}
               dark={dark}
               value={!dark}
               onChange={() => {

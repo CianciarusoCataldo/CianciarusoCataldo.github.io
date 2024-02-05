@@ -22,9 +22,6 @@ const HomePage = () => {
       <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row">
         <div className="flex flex-col w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 3xl:w-3/5">
           <Card
-            headerClassName="font-bold text-xl"
-            shadow
-            header={t("info", { context: "header" })}
             className="mb-5 mr-0 sm:flex-col md:mr-3 lg:mr-3 xl:mr-3 2xl:mr-3"
             body={
               <p className=" p-3 text-2xl">{t("info", { context: "body" })}</p>
