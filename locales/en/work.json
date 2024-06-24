@@ -1,0 +1,5 @@
+{
+  "work_duration_notNow": "{{start}} - {{end}}",
+  "work_duration_now": "{{start}} - Today",
+  "work_softwareEngineer": "Software Engineer"
+}
