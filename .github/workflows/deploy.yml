@@ -1,4 +1,4 @@
-name: Deploy MoBrix-ui playground app
+name: Deploy Portfolio-page
 
 on: workflow_dispatch
 
