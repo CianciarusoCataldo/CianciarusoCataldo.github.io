@@ -25,7 +25,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         uses: actions/upload-pages-artifact@v3.0.1
         with:
-          path: playground/build
+          path: build
 
   deploy-portfolio-page:
     needs: build-portfolio-page
