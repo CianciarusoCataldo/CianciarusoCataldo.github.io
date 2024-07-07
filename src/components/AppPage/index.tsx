@@ -14,11 +14,9 @@ const AppPage = ({
       shadow={false}
       animated={true}
       background={false}
+      animation="fade-in"
       className="m-2"
       dark={dark}
-      additionalProps={{
-        "data-mbx-animation": "fade-in",
-      }}
     >
       {children}
     </Container>
