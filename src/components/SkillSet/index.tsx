@@ -3,8 +3,8 @@ import { SkillSetProps } from "./types";
 
 const SkillSet = ({ skills }: SkillSetProps) => (
   <div className="flex flex-col px-3">
-    {skills.map((skill) => (
-      <div className="flex flex-col items-center py-1 mb-7">
+    {skills.map((skill, i) => (
+      <div className="flex flex-col items-center py-1 mb-7" key={`skill-${i}`}>
         <Label className="m-auto text-2xl text-center px-3">{skill.name}</Label>
         <Slider
           style={{

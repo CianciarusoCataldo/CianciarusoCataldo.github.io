@@ -2,12 +2,7 @@ import classNames from "classnames";
 
 import { useDispatch, useSelector } from "react-redux";
 
-import {
-  BurgerIcon,
-  DarkModeIcon,
-  LANGUAGES_ICONS,
-  LightModeIcon,
-} from "assets/images";
+import { DarkModeIcon, LANGUAGES_ICONS, LightModeIcon } from "assets/images";
 
 import { IMAGES } from "assets/images/custom";
 
@@ -19,7 +14,6 @@ import {
   isInDarkMode,
   goTo,
   setDarkMode,
-  openDrawer,
 } from "mobrix-engine-plugins";
 
 import { getAppName } from "mobrix-engine-tools";
@@ -69,18 +63,6 @@ const HeaderContent = () => {
           </div>
         </div>
         <div className="flex flex-row mt-6">
-          <div className="my-auto">
-            <Button
-              aria-label="drawer button"
-              onClick={() => {
-                dispatch(openDrawer());
-              }}
-              unstyled
-              className="outline-none"
-            >
-              <div className="p-1 sm:p-2 md:p-2">{BurgerIcon}</div>
-            </Button>
-          </div>
           <div className="my-auto">
             <Button
               aria-label="back button"
