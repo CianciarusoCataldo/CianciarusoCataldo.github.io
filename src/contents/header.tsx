@@ -94,7 +94,7 @@ const HeaderContent = () => {
               <Link
                 dark={dark}
                 newTab
-                to="https://github.com/CianciarusoCataldo/mobrix-ui"
+                to="https://github.com/CianciarusoCataldo"
               >
                 <p className="break-words text-lg sm:text-xl md:text-2xl lg:text-4xl">
                   {APP_NAME}
