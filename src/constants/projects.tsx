@@ -4,20 +4,16 @@ const projects = [
     link: "https://github.com/CianciarusoCataldo/mobrix-ui",
   },
   {
+    name: "mobrixBackend",
+    link: "https://github.com/CianciarusoCataldo/mobrix-backend",
+  },
+  {
     name: "mobrixEngine",
     link: "https://github.com/CianciarusoCataldo/mobrix-engine",
   },
   {
     name: "wikiFind",
     link: "https://github.com/CianciarusoCataldo/wiki-find",
-  },
-  {
-    name: "mobrixDesigner",
-    link: "https://github.com/CianciarusoCataldo/mobrix-designer",
-  },
-  {
-    name: "mobrixApp",
-    link: "https://github.com/CianciarusoCataldo/mobrix-app",
   },
   { name: "demoUi", link: "https://github.com/CianciarusoCataldo/demo-ui" },
   { name: "nnIa", link: "https://github.com/CianciarusoCataldo/nn-dispatcher" },
