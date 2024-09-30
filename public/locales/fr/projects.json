@@ -20,7 +20,7 @@
   "mobrixUi_description": "Want to build a powerful web app without developing and maintaining a codebase for every single component? MoBrix-ui is what you are looking for. Just install it and import what you need, without any additional code, but with full control on every component (all of them are completely customizable, expecially when used with Tailwind class names).",
   "mobrixBackend_title": "MoBrix-backend",
   "mobrixBackend_subTitle": "An intuitive Express.js wrapper",
-  "mobrixBackend_description": "An intuitive Express.js wrapper, to easily build an expressjs backend with a single configuration file",
+  "mobrixBackend_description": "An intuitive Express.js wrapper, to easily build an expressjs backend with a flexible and simplified configuration",
   "mobrixEngine_title": "MoBrix-engine",
   "mobrixEngine_subTitle": "A tiny and powerful engine to extend your app with a lot of functionalities",
   "mobrixEngine_description": "Enhance your web app with advanced features with few steps, extendable with plugins. This is also included into MoBrix-app project. Check it out !",
