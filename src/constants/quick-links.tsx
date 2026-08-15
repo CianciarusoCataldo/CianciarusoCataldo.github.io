@@ -1,4 +1,4 @@
-import { QUICK_LINKS_ICONS } from "assets/images/custom";
+import { QUICK_LINKS_ICONS } from "../assets/images/custom";
 
 const QUICK_LINKS: Record<string, { icon: JSX.Element; link: string }> = {
   facebook: {
@@ -29,7 +29,6 @@ const QUICK_LINKS: Record<string, { icon: JSX.Element; link: string }> = {
     icon: QUICK_LINKS_ICONS.mail,
     link: "mailto:cianciaruso.cataldo@gmail.com",
   },
-  telegram: { icon: QUICK_LINKS_ICONS.telegram, link: "https://t.me/Zio_Cat" },
 } as const;
 
 export default QUICK_LINKS;

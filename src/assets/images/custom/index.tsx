@@ -1,4 +1,4 @@
-import ProfileIcon from "./profile.png";
+import ProfileIcon from "./profile.jpg";
 
 import GithubLogo from "./quick_links/github-logo.svg";
 import TwitterLogo from "./quick_links/twitter-logo.svg";
@@ -21,6 +21,8 @@ import SongIcon from "./icons/song-icon.svg";
 import UnicalIcon from "./logo/unical-logo.jpg";
 import ComcastIcon from "./logo/comcast-logo.svg";
 import XcalIcon from "./logo/xcal-logo.png";
+import JdkIcon from "./logo/jdk-logo.png";
+import NttDataIcon from "./logo/nttdata-logo.svg";
 
 import NNBackendIcon from "./projects/nn-image-analyzer-logo.jpg";
 import NNAndroidIcon from "./projects/nn-image-analyzer-android-logo.jpg";
@@ -92,6 +94,8 @@ export const IMAGES = {
         <img alt="" width={90} height={90} src={XcalIcon} />
       </div>
     ),
+    JDK: <img alt="" width={90} height={90} src={JdkIcon} />,
+    NTTDATA: <img className="text-black" alt="" width={90} height={90} src={NttDataIcon} />,
   },
   PAGES: {
     HOME: <img alt="" width={60} height={60} src={Home} />,

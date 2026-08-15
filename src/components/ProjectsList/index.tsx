@@ -1,16 +1,16 @@
-import { projectsIcons } from "assets/images/custom";
-import projects from "constants/projects";
+import { projectsIcons } from "../../assets/images/custom";
+import projects from "../../constants/projects";
 
-import { useProjectsPageTranslation } from "hooks/localization";
+import { useProjectsPageTranslation } from "../../hooks/localization";
 import { Button, Card, Container } from "mobrix-ui";
-import { Widget } from "types";
+import { Widget } from "../../types.d";
 
 const ProjectList = ({ compact }: Widget) => {
   const t = useProjectsPageTranslation();
 
   return compact ? (
     <div className="h-64 overflow-auto">
-      {projects.map(({ name, link }, index) => {
+      {projects.map(({ name, link }: any, index: number) => {
         return (
           <div
             className="flex flex-col py-2 border-b-2 border-gray-400"
@@ -39,7 +39,7 @@ const ProjectList = ({ compact }: Widget) => {
     </div>
   ) : (
     <Container unstyled background={false}>
-      {projects.map(({ name, link }, index) => {
+      {projects.map(({ name, link }: any, index: number) => {
         return (
           <Card
             className="flex flex-col mt-4 py-2 border-b-2 border-gray-400"
@@ -64,6 +64,7 @@ const ProjectList = ({ compact }: Widget) => {
             footer={
               <Button
                 dark={true}
+                className="ml-5"
                 shadow={false}
                 onClick={() => window.open(link, "_blank")}
               >
